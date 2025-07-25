@@ -1,0 +1,9 @@
+[project]
+name = "new-apis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "natsort>=8.4.0",
+]
