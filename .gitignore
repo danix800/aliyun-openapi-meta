@@ -27,3 +27,7 @@ nbdist/
 
 ### Mac OS ###
 .DS_Store
+
+.history/
+
+.venv/
