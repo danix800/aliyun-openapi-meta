@@ -1,0 +1,44 @@
+{
+  "name": "DescribeSessionStatistic",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SearchRegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "StartTime",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EndTime",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Period",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    }
+  ]
+}

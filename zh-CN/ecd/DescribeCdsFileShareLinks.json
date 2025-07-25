@@ -1,0 +1,57 @@
+{
+  "name": "DescribeCdsFileShareLinks",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "CdsId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "企业网盘ID。"
+    },
+    {
+      "name": "ShareId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "分享ID。"
+    },
+    {
+      "name": "Creators",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "分享的创建者列表。"
+    },
+    {
+      "name": "ShareName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "分享名称，支持模糊匹配。"
+    },
+    {
+      "name": "Status",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "分享状态。"
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "限定此次返回资源的数量，取值范围为1\\~100。如果没有填写，则默认取值100。\n返回结果可以小于指定的数量，但不能多于指定的数量。"
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "查询凭证（Token）。取值为上一次调用该接口返回的`NextToken`参数值，初次调用接口时无需设置该参数。"
+    }
+  ]
+}

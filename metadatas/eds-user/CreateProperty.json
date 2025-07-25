@@ -1,0 +1,20 @@
+{
+  "name": "CreateProperty",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "PropertyKey",
+      "position": "Formdata",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "PropertyValues",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false
+    }
+  ]
+}

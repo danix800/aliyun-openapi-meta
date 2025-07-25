@@ -1,0 +1,116 @@
+{
+  "name": "CreateCloudDriveService",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Name",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OfficeSiteType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "CenId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DomainName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "UserMaxSize",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "MaxSize",
+      "position": "Query",
+      "type": "Long",
+      "required": true
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "BizType",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "SolutionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "CdsChargeType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "AutoPay",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "AutoRenew",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "Period",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "PeriodUnit",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "UserCount",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "ResellerOwnerUid",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    }
+  ]
+}

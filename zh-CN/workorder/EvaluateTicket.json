@@ -1,0 +1,43 @@
+{
+  "name": "EvaluateTicket",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TicketId",
+      "position": "Formdata",
+      "type": "String",
+      "required": true,
+      "description": "工单号"
+    },
+    {
+      "name": "Solved",
+      "position": "Formdata",
+      "type": "Boolean",
+      "required": true,
+      "description": "是否解决"
+    },
+    {
+      "name": "Score",
+      "position": "Formdata",
+      "type": "String",
+      "required": true,
+      "description": "评价星级1-5星"
+    },
+    {
+      "name": "Content",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "评价内容"
+    },
+    {
+      "name": "Uid",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "UID"
+    }
+  ]
+}

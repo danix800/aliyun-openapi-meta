@@ -1,0 +1,26 @@
+{
+  "name": "ModifyTemplateBaseInfo",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TemplateId",
+      "position": "Formdata",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "TemplateName",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Description",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

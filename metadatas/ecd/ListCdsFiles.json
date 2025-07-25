@@ -1,0 +1,68 @@
+{
+  "name": "ListCdsFiles",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "CdsId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ParentFileId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "FileIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "OrderType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Status",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

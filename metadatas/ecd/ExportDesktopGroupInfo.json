@@ -1,0 +1,80 @@
+{
+  "name": "ExportDesktopGroupInfo",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopGroupName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PolicyGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ChargeType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ExpiredTime",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopGroupId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "LangType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Tag",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "DescribeDesktopGroupSessions",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "地域ID。可以调用[DescribeRegions](~~DescribeRegions~~)获取无影云电脑支持的地域列表。"
+    },
+    {
+      "name": "SessionStatus",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "连接状态。"
+    },
+    {
+      "name": "OwnType",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "会话类型。"
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "连接会话的终端用户ID。"
+    },
+    {
+      "name": "StartTime",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "查询开始时间。"
+    },
+    {
+      "name": "EndTime",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "查询结束时间。"
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "每页最大数量。"
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "下一页Token。"
+    }
+  ]
+}

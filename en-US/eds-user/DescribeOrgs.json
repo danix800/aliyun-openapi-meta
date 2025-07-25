@@ -1,0 +1,36 @@
+{
+  "name": "DescribeOrgs",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "description": "返回结果的最大数量。取值范围：1~100。    \n默认值：100。"
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "查询凭证（Token），取值为上一次API调用返回的NextToken参数值。"
+    },
+    {
+      "name": "OrgName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "组织名称。"
+    },
+    {
+      "name": "ParentOrgId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "父组织ID。"
+    }
+  ]
+}

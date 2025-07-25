@@ -1,0 +1,43 @@
+{
+  "name": "DescribeResourceByCenterPolicyId",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "PolicyGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "策略ID。"
+    },
+    {
+      "name": "ProductType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "产品类型。"
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "分页查询时每页行数。    \n\n- 最大值：100。    \n- 默认值：10。"
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "下一个查询开始的Token。"
+    },
+    {
+      "name": "ResourceId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "资源ID。"
+    }
+  ]
+}

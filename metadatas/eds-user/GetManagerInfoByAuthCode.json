@@ -1,0 +1,14 @@
+{
+  "name": "GetManagerInfoByAuthCode",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "AuthCode",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

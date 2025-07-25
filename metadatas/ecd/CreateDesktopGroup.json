@@ -1,0 +1,374 @@
+{
+  "name": "CreateDesktopGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "BundleId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "PolicyGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DesktopGroupName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DirectoryId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ScaleStrategyId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "VpcId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DefaultInitDesktopCount",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "KeepDuration",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "ChargeType",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Period",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "PeriodUnit",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OwnType",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "AutoPay",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "Comments",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MinDesktopsCount",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "MaxDesktopsCount",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "AllowAutoSetup",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "AllowBufferCount",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "ClientToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EndUserIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "ResetType",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "LoadPolicy",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "BindAmount",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "Classify",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "AllClassifyUsers",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "VolumeEncryptionEnabled",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "VolumeEncryptionKey",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "RatioThreshold",
+      "position": "Query",
+      "type": "Number",
+      "required": false
+    },
+    {
+      "name": "ConnectDuration",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "IdleDisconnectDuration",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "StopDuration",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "ProfileFollowSwitch",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "FileSystemId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "BuyDesktopsCount",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "GroupVersion",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "AutoRenew",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "Tag",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "PromotionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ImageId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SystemDiskCategory",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SystemDiskSize",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "SystemDiskPerLevel",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DataDiskCategory",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DataDiskSize",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "DataDiskPerLevel",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DefaultLanguage",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Hostname",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MultiResource",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "ExclusiveType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "GroupAmount",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "SessionType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "TimerGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SnapshotPolicyId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ResellerOwnerUid",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "UserOuPath",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "UserGroupName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SimpleUserGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DeleteDuration",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    }
+  ]
+}

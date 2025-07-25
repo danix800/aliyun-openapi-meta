@@ -1,0 +1,44 @@
+{
+  "name": "DeleteFingerPrintTemplate",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ClientId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "SessionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "LoginToken",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Index",
+      "position": "Query",
+      "type": "Integer",
+      "required": true
+    },
+    {
+      "name": "ClientToken",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

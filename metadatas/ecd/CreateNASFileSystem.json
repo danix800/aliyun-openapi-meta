@@ -1,0 +1,44 @@
+{
+  "name": "CreateNASFileSystem",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Name",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "StorageType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EncryptType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

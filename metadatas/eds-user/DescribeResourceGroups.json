@@ -1,0 +1,44 @@
+{
+  "name": "DescribeResourceGroups",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "ResourceGroupName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ResourceGroupIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "PageNumber",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NeedContainResourceGroupWithOfficeSite",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "Platform",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

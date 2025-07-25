@@ -1,0 +1,29 @@
+{
+  "name": "DescribeGroupUser",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "用户组ID。"
+    },
+    {
+      "name": "BizType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "> 该参数不开放使用。"
+    },
+    {
+      "name": "SolutionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "> 该参数不开放使用。"
+    }
+  ]
+}

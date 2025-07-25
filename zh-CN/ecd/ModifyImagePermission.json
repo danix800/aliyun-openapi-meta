@@ -1,0 +1,36 @@
+{
+  "name": "ModifyImagePermission",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "地域ID。可以调用[DescribeRegions](~~196646~~)获取无影云电脑支持的地域列表。"
+    },
+    {
+      "name": "ImageId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "待共享的镜像ID。"
+    },
+    {
+      "name": "AddAccount",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "接受镜像共享的阿里云账号ID。可共享给1~50个阿里云账号。"
+    },
+    {
+      "name": "RemoveAccount",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "取消镜像共享的阿里云账号ID。可取消共享给1~50个阿里云账号。"
+    }
+  ]
+}

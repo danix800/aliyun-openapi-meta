@@ -1,0 +1,50 @@
+{
+  "name": "DescribeSessionStatistic",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "地域ID。"
+    },
+    {
+      "name": "SearchRegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "搜索地域ID。用于过滤出指定地域的桌面信息。"
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "工作区ID。"
+    },
+    {
+      "name": "StartTime",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "查询开始时间。"
+    },
+    {
+      "name": "EndTime",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "查询结束时间。"
+    },
+    {
+      "name": "Period",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "查询时间间隔，单位为秒。取值范围：\n\n- 60\n- 120"
+    }
+  ]
+}

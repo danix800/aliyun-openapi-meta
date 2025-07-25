@@ -1,0 +1,20 @@
+{
+  "name": "ModifyOrg",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "OrgName",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "OrgId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

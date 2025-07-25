@@ -1,0 +1,43 @@
+{
+  "name": "ReplyTicket",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TicketId",
+      "position": "Formdata",
+      "type": "String",
+      "required": true,
+      "description": "工单号"
+    },
+    {
+      "name": "Content",
+      "position": "Formdata",
+      "type": "String",
+      "required": true,
+      "description": "工单回复的内容"
+    },
+    {
+      "name": "FileNameList",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "附件名称列表，GetAttachmentUploadUrl接口返回的ObjectKey字段"
+    },
+    {
+      "name": "Encrypt",
+      "position": "Formdata",
+      "type": "Boolean",
+      "required": true,
+      "description": "是否加密"
+    },
+    {
+      "name": "Uid",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "阿里云UID"
+    }
+  ]
+}

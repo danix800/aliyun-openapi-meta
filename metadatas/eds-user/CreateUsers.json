@@ -1,0 +1,38 @@
+{
+  "name": "CreateUsers",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "Users",
+      "position": "Formdata",
+      "type": "Array",
+      "required": true
+    },
+    {
+      "name": "Password",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "AutoLockTime",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "IsLocalAdmin",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "PasswordExpireDays",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

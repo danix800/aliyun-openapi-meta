@@ -1,0 +1,32 @@
+{
+  "name": "ConfigADConnectorTrust",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "TrustKey",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "RdsLicenseDomain",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    }
+  ]
+}

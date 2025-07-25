@@ -1,0 +1,32 @@
+{
+  "name": "DeleteDevices",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DeviceIds",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    },
+    {
+      "name": "ClientType",
+      "position": "Query",
+      "type": "Integer",
+      "required": true
+    },
+    {
+      "name": "Force",
+      "position": "Query",
+      "type": "Integer",
+      "required": true
+    }
+  ]
+}

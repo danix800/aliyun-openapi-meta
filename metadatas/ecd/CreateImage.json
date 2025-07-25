@@ -1,0 +1,68 @@
+{
+  "name": "CreateImage",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DesktopId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ImageName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SnapshotId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ImageResourceType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SnapshotIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "AutoCleanUserdata",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "DiskType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DataSnapshotIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    }
+  ]
+}

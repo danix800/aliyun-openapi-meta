@@ -1,0 +1,43 @@
+{
+  "name": "DescribeMfaDevices",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "description": "返回结果的最大数量。取值范围：1~500。    \n默认值：100。"
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "查询凭证。取值为上一次API调用时返回的NextToken参数值。"
+    },
+    {
+      "name": "EndUserIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "便捷账号的用户名列表。"
+    },
+    {
+      "name": "SerialNumbers",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "虚拟MFA设备的序列号列表。"
+    },
+    {
+      "name": "AdDomain",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "AD办公网络地址。"
+    }
+  ]
+}

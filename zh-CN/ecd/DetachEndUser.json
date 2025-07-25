@@ -1,0 +1,50 @@
+{
+  "name": "DetachEndUser",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "DeviceId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "无影硬件终端的SN。"
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "需要为无影硬件终端移除的绑定用户ID。"
+    },
+    {
+      "name": "DirectoryId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "便捷办公网络ID。"
+    },
+    {
+      "name": "AdDomain",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "AD办公网络地址。"
+    },
+    {
+      "name": "ClientType",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "客户端类型 。"
+    },
+    {
+      "name": "Region",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "地域ID。可以调用[DescribeRegions](~~DescribeRegions~~)获取无影云电脑支持的地域列表。"
+    }
+  ]
+}

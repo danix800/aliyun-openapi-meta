@@ -1,0 +1,14 @@
+{
+  "name": "RemoveProperty",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "PropertyId",
+      "position": "Formdata",
+      "type": "Long",
+      "required": true
+    }
+  ]
+}

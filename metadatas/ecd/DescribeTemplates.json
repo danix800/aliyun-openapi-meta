@@ -1,0 +1,68 @@
+{
+  "name": "DescribeTemplates",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TemplateIds",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "TemplateName",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "TemplateType",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ImageId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Keyword",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ProductType",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "BizRegionId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "BizType",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PageNumber",
+      "position": "Formdata",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "PageSize",
+      "position": "Formdata",
+      "type": "Integer",
+      "required": false
+    }
+  ]
+}

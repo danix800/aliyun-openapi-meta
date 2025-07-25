@@ -1,0 +1,44 @@
+{
+  "name": "ListOfficeSiteOverview",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ForceRefresh",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "QueryRange",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    }
+  ]
+}

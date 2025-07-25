@@ -1,0 +1,26 @@
+{
+  "name": "SendVerifyCode",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "VerifyCodeAction",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ExtraInfo",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

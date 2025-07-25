@@ -1,0 +1,14 @@
+{
+  "name": "CheckUsedProperty",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "PropertyId",
+      "position": "Query",
+      "type": "Long",
+      "required": true
+    }
+  ]
+}

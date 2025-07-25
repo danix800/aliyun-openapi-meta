@@ -1,0 +1,56 @@
+{
+  "name": "SendTokenCode",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "ClientId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "LoginToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SessionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ClientOS",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ClientVersion",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "TokenCode",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "name": "ModifyTemplate",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TemplateId",
+      "position": "Formdata",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "TemplateName",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Description",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SystemDiskSize",
+      "position": "Formdata",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "SystemDiskPerformanceLevel",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ImageId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PolicyGroupId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DefaultLanguage",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "TimerGroupId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ResourceGroupId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ResourceTagList",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "RegionConfigList",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "SiteConfigList",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "ChargeType",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Period",
+      "position": "Formdata",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "PeriodUnit",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "AutoPay",
+      "position": "Formdata",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "AutoRenew",
+      "position": "Formdata",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "UserDuration",
+      "position": "Formdata",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "PostPaidAfterUsedUp",
+      "position": "Formdata",
+      "type": "Boolean",
+      "required": false
+    }
+  ]
+}

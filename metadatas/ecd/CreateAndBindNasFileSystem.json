@@ -1,0 +1,56 @@
+{
+  "name": "CreateAndBindNasFileSystem",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "FileSystemName",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "StorageType",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "EncryptType",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DesktopGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "EndUserIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    }
+  ]
+}

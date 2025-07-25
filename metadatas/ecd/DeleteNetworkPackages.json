@@ -1,0 +1,26 @@
+{
+  "name": "DeleteNetworkPackages",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "NetworkPackageId",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    },
+    {
+      "name": "ResellerOwnerUid",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    }
+  ]
+}

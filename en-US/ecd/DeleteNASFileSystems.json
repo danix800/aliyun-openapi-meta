@@ -1,0 +1,22 @@
+{
+  "name": "DeleteNASFileSystems",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "地域ID。"
+    },
+    {
+      "name": "FileSystemId",
+      "position": "Query",
+      "type": "Array",
+      "required": true,
+      "description": "NAS文件系统ID数组。"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "DescribeGuestApplications",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DesktopId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

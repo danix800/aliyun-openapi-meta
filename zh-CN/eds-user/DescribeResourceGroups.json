@@ -1,0 +1,50 @@
+{
+  "name": "DescribeResourceGroups",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "ResourceGroupName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "资源组名称。"
+    },
+    {
+      "name": "ResourceGroupIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "资源组ID列表。"
+    },
+    {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "每页数量。"
+    },
+    {
+      "name": "PageNumber",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "页码。"
+    },
+    {
+      "name": "NeedContainResourceGroupWithOfficeSite",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "description": "> 该参数不对外开放使用。"
+    },
+    {
+      "name": "Platform",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "> 固定值：AliyunConsole。\n> - 无影企业版固定传AliyunConsole，其他平台暂不对外开放。"
+    }
+  ]
+}

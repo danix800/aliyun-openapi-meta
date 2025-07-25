@@ -1,0 +1,38 @@
+{
+  "name": "ModifyCloudDrivePermission",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "CdsId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DownloadEndUserIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "DownloadUploadEndUserIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "NoDownloadNoUploadEndUserIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    }
+  ]
+}

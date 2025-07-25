@@ -1,0 +1,74 @@
+{
+  "name": "ModifyDesktopSpec",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DesktopId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopType",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "RootDiskSizeGib",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "UserDiskSizeGib",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "AutoPay",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "UserDiskPerformanceLevel",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PromotionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ResourceSpecs",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "ResourceType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ResellerOwnerUid",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    }
+  ]
+}

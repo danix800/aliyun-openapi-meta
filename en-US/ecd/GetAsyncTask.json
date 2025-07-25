@@ -1,0 +1,22 @@
+{
+  "name": "GetAsyncTask",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "CdsId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "企业网盘ID。"
+    },
+    {
+      "name": "AsyncTaskId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "异步任务ID。调用[CopyCdsFile](~~2247626~~)接口复制文件夹时，因为是后台异步复制，所以会返回该字段。调用本接口并传入该异步任务ID即可获取任务详细信息。"
+    }
+  ]
+}

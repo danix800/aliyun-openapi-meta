@@ -1,0 +1,134 @@
+{
+  "name": "DescribeBundles",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "BundleType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopTypeFamily",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "CpuCount",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "MemorySize",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "GpuCount",
+      "position": "Query",
+      "type": "Number",
+      "required": false
+    },
+    {
+      "name": "CheckStock",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "FromDesktopGroup",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "ProtocolType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "BundleId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "SupportMultiSession",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "VolumeEncryptionEnabled",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "FotaChannel",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SelectedBundle",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "SessionType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ImageId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "OsType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Scope",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "GpuDriverType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

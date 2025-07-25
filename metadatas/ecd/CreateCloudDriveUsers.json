@@ -1,0 +1,32 @@
+{
+  "name": "CreateCloudDriveUsers",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "CdsId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "UserMaxSize",
+      "position": "Query",
+      "type": "Long",
+      "required": true
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    }
+  ]
+}

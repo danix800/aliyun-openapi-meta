@@ -1,0 +1,57 @@
+{
+  "name": "AttachEndUser",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "地域ID。可以调用[DescribeRegions](~~196646~~)获取无影云电脑支持的地域列表。"
+    },
+    {
+      "name": "DeviceId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "无影硬件终端的SN。"
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "需要为无影硬件终端添加的绑定用户ID。"
+    },
+    {
+      "name": "DirectoryId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "便捷办公网络ID。"
+    },
+    {
+      "name": "AdDomain",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "AD办公网络地址。"
+    },
+    {
+      "name": "UserType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "用户账号类型。"
+    },
+    {
+      "name": "ClientType",
+      "position": "Query",
+      "type": "Integer",
+      "required": true,
+      "description": "设备类型。"
+    }
+  ]
+}

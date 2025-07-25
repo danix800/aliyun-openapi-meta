@@ -1,0 +1,22 @@
+{
+  "name": "DeleteDrive",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "地域ID。"
+    },
+    {
+      "name": "DriveId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "用户级别的存储资源ID。"
+    }
+  ]
+}

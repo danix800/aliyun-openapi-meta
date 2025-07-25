@@ -1,0 +1,38 @@
+{
+  "name": "CreateSnapshot",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DesktopId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "SnapshotName",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SourceDiskType",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "ReplyTicket",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TicketId",
+      "position": "Formdata",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Content",
+      "position": "Formdata",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "FileNameList",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "Encrypt",
+      "position": "Formdata",
+      "type": "Boolean",
+      "required": true
+    },
+    {
+      "name": "Uid",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

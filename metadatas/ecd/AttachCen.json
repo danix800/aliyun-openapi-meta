@@ -1,0 +1,38 @@
+{
+  "name": "AttachCen",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "CenId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "CenOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "VerifyCode",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

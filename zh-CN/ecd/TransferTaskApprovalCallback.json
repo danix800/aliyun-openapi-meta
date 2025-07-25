@@ -1,0 +1,36 @@
+{
+  "name": "TransferTaskApprovalCallback",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TaskId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "传输任务ID。"
+    },
+    {
+      "name": "Result",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "审批结果。"
+    },
+    {
+      "name": "OssBucketRegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "文件所在bucket地域。"
+    },
+    {
+      "name": "OssBucketName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "文件所在bucket名称。"
+    }
+  ]
+}

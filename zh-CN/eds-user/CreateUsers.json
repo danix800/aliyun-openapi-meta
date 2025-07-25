@@ -1,0 +1,43 @@
+{
+  "name": "CreateUsers",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "Users",
+      "position": "Formdata",
+      "type": "Array",
+      "required": true,
+      "description": "便捷账号信息。"
+    },
+    {
+      "name": "Password",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "初始密码。如果不设置，将发送重置密码邮件到用户邮箱。"
+    },
+    {
+      "name": "AutoLockTime",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "自动锁定账号的日期。"
+    },
+    {
+      "name": "IsLocalAdmin",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "description": "是否将该便捷账号设为本地管理员。"
+    },
+    {
+      "name": "PasswordExpireDays",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "用户账号的密码默认为永久有效，可通过此参数设置30\\~365天的密码有效期，当密码到期后，终端用户必须先修改密码才能继续登录。\n\n> 该功能目前处于邀测中，如需体验，请提交工单申请开通。"
+    }
+  ]
+}

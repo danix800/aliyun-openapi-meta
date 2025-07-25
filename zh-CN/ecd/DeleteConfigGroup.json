@@ -1,0 +1,22 @@
+{
+  "name": "DeleteConfigGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "地域ID。该功能无地域属性，该字段固定填写`cn-shanghai`。"
+    },
+    {
+      "name": "GroupIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "需要删除的配置组ID列表。"
+    }
+  ]
+}

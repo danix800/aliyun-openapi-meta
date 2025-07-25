@@ -1,0 +1,26 @@
+{
+  "name": "BindConfigGroup",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ResourceInfos",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    }
+  ]
+}

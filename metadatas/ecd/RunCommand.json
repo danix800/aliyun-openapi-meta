@@ -1,0 +1,56 @@
+{
+  "name": "RunCommand",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Type",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "CommandContent",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Timeout",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "ContentEncoding",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopId",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "CommandRole",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

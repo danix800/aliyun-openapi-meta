@@ -1,0 +1,26 @@
+{
+  "name": "ModifyUser",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Email",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Phone",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

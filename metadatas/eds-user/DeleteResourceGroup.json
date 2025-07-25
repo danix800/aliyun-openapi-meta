@@ -1,0 +1,20 @@
+{
+  "name": "DeleteResourceGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "ResourceGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ResourceGroupIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    }
+  ]
+}

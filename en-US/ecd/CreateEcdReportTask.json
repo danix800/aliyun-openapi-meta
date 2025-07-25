@@ -1,0 +1,43 @@
+{
+  "name": "CreateEcdReportTask",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TaskType",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "报表任务类型。"
+    },
+    {
+      "name": "SubType",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "报表任务子类型。"
+    },
+    {
+      "name": "FilterList",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "查询结果过滤条件列表，各个查询条件对象是“逻辑与”关系（&）。\n每个查询条件包含FilterKey、FilterValues，表示查询条件名称和具体取值。"
+    },
+    {
+      "name": "ReportFileName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "报表文件名称。"
+    },
+    {
+      "name": "LangType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "报表语言类型。枚举值。"
+    }
+  ]
+}

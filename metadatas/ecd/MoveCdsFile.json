@@ -1,0 +1,50 @@
+{
+  "name": "MoveCdsFile",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "CdsId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "FileId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ParentFolderId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ConflictPolicy",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

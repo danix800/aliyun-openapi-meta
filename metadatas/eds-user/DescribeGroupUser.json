@@ -1,0 +1,26 @@
+{
+  "name": "DescribeGroupUser",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "BizType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SolutionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

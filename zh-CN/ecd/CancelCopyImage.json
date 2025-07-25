@@ -1,0 +1,22 @@
+{
+  "name": "CancelCopyImage",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "复制镜像的目标地域ID。"
+    },
+    {
+      "name": "ImageId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "目标地域下正在通过复制而生成的新镜像ID。"
+    }
+  ]
+}

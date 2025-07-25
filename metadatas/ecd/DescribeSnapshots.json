@@ -1,0 +1,56 @@
+{
+  "name": "DescribeSnapshots",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DesktopId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SnapshotId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ClientId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "SessionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "LoginToken",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

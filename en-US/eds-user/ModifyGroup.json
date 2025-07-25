@@ -1,0 +1,22 @@
+{
+  "name": "ModifyGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "用户组ID。"
+    },
+    {
+      "name": "NewGroupName",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "新的用户组名称。"
+    }
+  ]
+}

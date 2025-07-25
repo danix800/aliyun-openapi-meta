@@ -1,0 +1,26 @@
+{
+  "name": "ModifyNetworkPackageEnabled",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "NetworkPackageId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Enabled",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    }
+  ]
+}

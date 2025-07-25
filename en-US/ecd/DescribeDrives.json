@@ -1,0 +1,50 @@
+{
+  "name": "DescribeDrives",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "地域ID。可以调用[DescribeRegions](~~196646~~)获取无影云电脑支持的地域列表。"
+    },
+    {
+      "name": "UserId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "用户ID。"
+    },
+    {
+      "name": "DomainIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "存储资源ID列表。"
+    },
+    {
+      "name": "ResourceType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "存储资源类型。"
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "分页查询时每页行数。\n\n- 最大值：500\n- 默认值：20"
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "下一个查询开始的Token，NextToken为空表示没有下一个。"
+    }
+  ]
+}

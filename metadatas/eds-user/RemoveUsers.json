@@ -1,0 +1,14 @@
+{
+  "name": "RemoveUsers",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "Users",
+      "position": "Formdata",
+      "type": "Array",
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "name": "DescribeRecordings",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PolicyGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "StartTime",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EndTime",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "NeedSignedUrl",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "SignedUrlExpireMinutes",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "StandardStartTime",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "StandardEndTime",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

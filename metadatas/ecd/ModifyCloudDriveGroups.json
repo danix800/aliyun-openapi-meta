@@ -1,0 +1,38 @@
+{
+  "name": "ModifyCloudDriveGroups",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "CdsId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Status",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "TotalSize",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    }
+  ]
+}

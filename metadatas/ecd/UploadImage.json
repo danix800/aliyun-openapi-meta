@@ -1,0 +1,80 @@
+{
+  "name": "UploadImage",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "OssObjectPath",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ImageName",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OsType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "GpuCategory",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "ProtocolType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DataDiskSize",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "GpuDriverType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "LicenseType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EnableSecurityCheck",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "SystemDiskSize",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

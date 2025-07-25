@@ -1,0 +1,22 @@
+{
+  "name": "UnlockUsers",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "Users",
+      "position": "Formdata",
+      "type": "Array",
+      "required": true,
+      "description": "要解锁的便捷账号的用户名列表。"
+    },
+    {
+      "name": "AutoLockTime",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "自动锁定便捷账号的日期。"
+    }
+  ]
+}

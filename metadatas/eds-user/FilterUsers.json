@@ -1,0 +1,98 @@
+{
+  "name": "FilterUsers",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Filter",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PropertyFilterParam",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "PropertyKeyValueFilterParam",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "IncludeDesktopCount",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "IncludeDesktopGroupCount",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "OrgId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OwnerType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ExcludeEndUserIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "OrderParam",
+      "position": "Query",
+      "type": "Object",
+      "required": false
+    },
+    {
+      "name": "Status",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "IsQueryAllSubOrgs",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "IncludeOrgInfo",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "IncludeSupportIdps",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    }
+  ]
+}

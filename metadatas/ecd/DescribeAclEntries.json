@@ -1,0 +1,44 @@
+{
+  "name": "DescribeAclEntries",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SourceType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SourceId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

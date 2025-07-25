@@ -1,0 +1,22 @@
+{
+  "name": "DescribeCloudDrivePermissions",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "地域ID。"
+    },
+    {
+      "name": "CdsId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "已创建的企业网盘ID。"
+    }
+  ]
+}

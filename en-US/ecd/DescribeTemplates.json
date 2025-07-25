@@ -1,0 +1,78 @@
+{
+  "name": "DescribeTemplates",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TemplateIds",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false,
+      "description": "需要查询的模板ID列表。"
+    },
+    {
+      "name": "TemplateName",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "使用模板名称查询。"
+    },
+    {
+      "name": "TemplateType",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "指定查询的模板类型，不传则表示查询所有类型的模板。"
+    },
+    {
+      "name": "ImageId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "云电脑镜像ID，可以从镜像管理页面查询，支持系统镜像、自定义镜像等类型。"
+    },
+    {
+      "name": "Keyword",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "关键字。支持模糊搜索模板ID、模板名称字段。"
+    },
+    {
+      "name": "ProductType",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "产品类型。固定填写`CloudDesktop`。"
+    },
+    {
+      "name": "BizRegionId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "模板查询时的地域过滤条件。 \n\n> 如果设置了该参数， 则查询出的结果会把其他不匹配的地域化配置屏蔽。"
+    },
+    {
+      "name": "BizType",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "> 该参数暂不对外开放使用。"
+    },
+    {
+      "name": "PageNumber",
+      "position": "Formdata",
+      "type": "Integer",
+      "required": false,
+      "description": "分页查询时，当前页的页码。"
+    },
+    {
+      "name": "PageSize",
+      "position": "Formdata",
+      "type": "Integer",
+      "required": false,
+      "description": "分页查询时，每页最大行数。"
+    }
+  ]
+}

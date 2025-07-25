@@ -1,0 +1,43 @@
+{
+  "name": "ModifyTimerGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "地域ID。该功能无地域属性，该字段固定填写`cn-shanghai`。"
+    },
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "配置组ID。"
+    },
+    {
+      "name": "ConfigTimers",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "定时任务的配置信息。"
+    },
+    {
+      "name": "Name",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "配置组名称。"
+    },
+    {
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "配置组描述信息。"
+    }
+  ]
+}

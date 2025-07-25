@@ -1,0 +1,71 @@
+{
+  "name": "ListTickets",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "StartDate",
+      "position": "Formdata",
+      "type": "Long",
+      "required": false,
+      "description": "工单创建时间, 配合EndDate使用, 用于查询在指定的开始和结束时间范围内创建的工单"
+    },
+    {
+      "name": "EndDate",
+      "position": "Formdata",
+      "type": "Long",
+      "required": false,
+      "description": "工单创建截止时间, 配合StartDate使用, 用于查询在指定的开始和结束时间范围内提交的工单"
+    },
+    {
+      "name": "PageNumber",
+      "position": "Query",
+      "type": "Integer",
+      "required": true,
+      "description": "分页查询页码参数"
+    },
+    {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "required": true,
+      "description": "分页查询条数参数"
+    },
+    {
+      "name": "TicketId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "工单编号"
+    },
+    {
+      "name": "Keyword",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "工单关键词, 用于模糊搜索匹配工单创建时的Description字段的内容"
+    },
+    {
+      "name": "StatusList",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false,
+      "description": "多个工单状态"
+    },
+    {
+      "name": "TicketIdList",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false,
+      "description": "多个工单编号"
+    },
+    {
+      "name": "Uid",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "UID"
+    }
+  ]
+}

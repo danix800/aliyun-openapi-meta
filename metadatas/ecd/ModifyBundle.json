@@ -1,0 +1,44 @@
+{
+  "name": "ModifyBundle",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "BundleId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ImageId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "BundleName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Language",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "ReportSessionStatus",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "InstanceId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "SessionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "SessionStatus",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "SessionChangeTime",
+      "position": "Query",
+      "type": "Long",
+      "required": true
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

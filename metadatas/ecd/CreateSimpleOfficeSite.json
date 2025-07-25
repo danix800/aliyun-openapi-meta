@@ -1,0 +1,92 @@
+{
+  "name": "CreateSimpleOfficeSite",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "CidrBlock",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "CenId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "CenOwnerId",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "VerifyCode",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Bandwidth",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "OfficeSiteName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EnableInternetAccess",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "EnableAdminAccess",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "DesktopAccessType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "NeedVerifyZeroDevice",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "VSwitchId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "CloudBoxOfficeSite",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "VpcType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

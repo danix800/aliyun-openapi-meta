@@ -1,0 +1,38 @@
+{
+  "name": "CreateCloudDriveGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "CdsId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "TotalSize",
+      "position": "Query",
+      "type": "Long",
+      "required": true
+    },
+    {
+      "name": "AdminUserIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    }
+  ]
+}

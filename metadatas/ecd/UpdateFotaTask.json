@@ -1,0 +1,26 @@
+{
+  "name": "UpdateFotaTask",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "TaskUid",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "UserStatus",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

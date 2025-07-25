@@ -1,0 +1,15 @@
+{
+  "name": "GetAttachmentUploadUrl",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "FileName",
+      "position": "Formdata",
+      "type": "String",
+      "required": true,
+      "description": "上传文件的名称"
+    }
+  ]
+}

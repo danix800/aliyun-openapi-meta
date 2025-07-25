@@ -1,0 +1,32 @@
+{
+  "name": "CreateGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "GroupName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ParentGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "BizType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SolutionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "RevokeCoordinatePrivilege",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Uuid",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "CoId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "UserType",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

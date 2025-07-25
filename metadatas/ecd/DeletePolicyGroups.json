@@ -1,0 +1,20 @@
+{
+  "name": "DeletePolicyGroups",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "PolicyGroupId",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    }
+  ]
+}

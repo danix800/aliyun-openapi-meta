@@ -1,0 +1,26 @@
+{
+  "name": "ModifyOfficeSiteDnsInfo",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DnsAddress",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "name": "SetFingerPrintTemplate",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ClientId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "SessionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "LoginToken",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "FingerPrintTemplate",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EncryptedFingerPrintTemplate",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EncryptedKey",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Password",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ClientToken",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

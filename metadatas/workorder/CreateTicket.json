@@ -1,0 +1,56 @@
+{
+  "name": "CreateTicket",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "Description",
+      "position": "Formdata",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Severity",
+      "position": "Formdata",
+      "type": "Integer",
+      "required": true
+    },
+    {
+      "name": "CategoryId",
+      "position": "Formdata",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Title",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "CreatorId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Email",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "FileNameList",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "SecretInfo",
+      "position": "Query",
+      "type": "Object",
+      "required": false
+    }
+  ]
+}

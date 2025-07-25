@@ -1,0 +1,32 @@
+{
+  "name": "TransferTaskApprovalCallback",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TaskId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Result",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OssBucketRegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OssBucketName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

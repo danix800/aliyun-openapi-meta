@@ -1,0 +1,116 @@
+{
+  "name": "GetLoginToken",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ClientId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DirectoryId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SessionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "CurrentStage",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Password",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OldPassword",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "NewPassword",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "AuthenticationCode",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ClientOS",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ClientVersion",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "TokenCode",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "KeepAlive",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "KeepAliveToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Uuid",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ClientType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

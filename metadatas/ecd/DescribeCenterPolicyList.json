@@ -1,0 +1,44 @@
+{
+  "name": "DescribeCenterPolicyList",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "PageNumber",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "PolicyGroupId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "Scope",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "BusinessType",
+      "position": "Query",
+      "type": "Integer",
+      "required": true
+    },
+    {
+      "name": "ResourceType",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

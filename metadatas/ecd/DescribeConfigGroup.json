@@ -1,0 +1,62 @@
+{
+  "name": "DescribeConfigGroup",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Name",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Type",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ProductType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Statuses",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "PageNumber",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "GroupIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    }
+  ]
+}

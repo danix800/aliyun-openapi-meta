@@ -1,0 +1,78 @@
+{
+  "name": "SetFingerPrintTemplate",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "地域ID。"
+    },
+    {
+      "name": "ClientId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "客户端生成的唯一ID。"
+    },
+    {
+      "name": "SessionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "会话ID。"
+    },
+    {
+      "name": "LoginToken",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "登录凭证。"
+    },
+    {
+      "name": "FingerPrintTemplate",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "指纹模板。"
+    },
+    {
+      "name": "EncryptedFingerPrintTemplate",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "已加密的指纹模板。"
+    },
+    {
+      "name": "EncryptedKey",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "加密密钥。"
+    },
+    {
+      "name": "Password",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "密码。"
+    },
+    {
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "描述。"
+    },
+    {
+      "name": "ClientToken",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "保证请求幂等性。从您的客户端生成一个参数值，确保不同请求间该参数值唯一。ClientToken只支持ASCII字符，且不能超过64个字符。更多信息，请参见[如何保证幂等性](~~25693~~)。"
+    }
+  ]
+}

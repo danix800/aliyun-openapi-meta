@@ -1,0 +1,62 @@
+{
+  "name": "ListTickets",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "StartDate",
+      "position": "Formdata",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "EndDate",
+      "position": "Formdata",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "PageNumber",
+      "position": "Query",
+      "type": "Integer",
+      "required": true
+    },
+    {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "required": true
+    },
+    {
+      "name": "TicketId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Keyword",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "StatusList",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "TicketIdList",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "Uid",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

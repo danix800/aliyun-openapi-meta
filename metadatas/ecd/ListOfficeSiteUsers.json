@@ -1,0 +1,62 @@
+{
+  "name": "ListOfficeSiteUsers",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Filter",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "OUPath",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "AssignedInfo",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SortType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "IncludeAssignedUser",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    }
+  ]
+}

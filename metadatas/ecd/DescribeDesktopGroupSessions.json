@@ -1,0 +1,56 @@
+{
+  "name": "DescribeDesktopGroupSessions",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SessionStatus",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OwnType",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "StartTime",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EndTime",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

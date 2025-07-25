@@ -1,0 +1,20 @@
+{
+  "name": "DescribeOrgByLayer",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "ParentOrgId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OrgName",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

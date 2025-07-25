@@ -1,0 +1,50 @@
+{
+  "name": "CreateConfigGroup",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "地域ID。该功能无地域属性，该字段固定填写`cn-shanghai`。"
+    },
+    {
+      "name": "Name",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "配置组名称。"
+    },
+    {
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "配置组描述信息。"
+    },
+    {
+      "name": "Type",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "配置组类型。"
+    },
+    {
+      "name": "ProductType",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "配置组使用的产品类型。"
+    },
+    {
+      "name": "ConfigTimers",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "定时任务的配置信息，列表结构。"
+    }
+  ]
+}

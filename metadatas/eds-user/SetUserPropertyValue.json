@@ -1,0 +1,32 @@
+{
+  "name": "SetUserPropertyValue",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "UserId",
+      "position": "Formdata",
+      "type": "Long",
+      "required": true
+    },
+    {
+      "name": "UserName",
+      "position": "Formdata",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "PropertyId",
+      "position": "Formdata",
+      "type": "Long",
+      "required": true
+    },
+    {
+      "name": "PropertyValueId",
+      "position": "Formdata",
+      "type": "Long",
+      "required": true
+    }
+  ]
+}

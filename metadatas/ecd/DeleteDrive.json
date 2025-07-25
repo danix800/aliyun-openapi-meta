@@ -1,0 +1,20 @@
+{
+  "name": "DeleteDrive",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DriveId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

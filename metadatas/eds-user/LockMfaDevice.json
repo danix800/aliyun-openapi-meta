@@ -1,0 +1,20 @@
+{
+  "name": "LockMfaDevice",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "SerialNumber",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "AdDomain",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

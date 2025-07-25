@@ -1,0 +1,56 @@
+{
+  "name": "DescribePolicyGroups",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PolicyGroupId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "Scope",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ExternalPolicyGroupIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "PageNumber",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    }
+  ]
+}

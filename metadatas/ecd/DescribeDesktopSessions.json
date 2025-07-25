@@ -1,0 +1,92 @@
+{
+  "name": "DescribeDesktopSessions",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SessionStatus",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "StartTime",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EndTime",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PageNumber",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "DesktopId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "DesktopName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SubPayType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "CheckOsSession",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "EndUserIdFilter",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ResourceGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

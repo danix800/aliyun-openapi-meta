@@ -1,0 +1,22 @@
+{
+  "name": "LockUsers",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "Users",
+      "position": "Formdata",
+      "type": "Array",
+      "required": true,
+      "description": "要锁定的便捷账号的用户名列表。"
+    },
+    {
+      "name": "LogoutSession",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "description": ""
+    }
+  ]
+}

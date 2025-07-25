@@ -1,0 +1,113 @@
+{
+  "name": "FilterUsers",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "description": "分页查询时每页行数（大于100时会自动重置为100）。"
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "下一次查询的Token。首次调用接口时无需设置该参数。如果一次查询结果并没有完整返回所有的结果，则返回的NextToken不为空。您可以在查询中上传返回的NextToken继续查询。"
+    },
+    {
+      "name": "Filter",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "模糊搜索字符串，支持匹配用户名（EndUserId）和邮箱（Email）。该字段支持使用通配符（\\*），例如将该字段设为a*m，则返回用户名或邮箱以a开头、以m结尾的所有结果。"
+    },
+    {
+      "name": "PropertyFilterParam",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "要模糊查询的用户属性列表。"
+    },
+    {
+      "name": "PropertyKeyValueFilterParam",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "属性名和属性值信息列表。"
+    },
+    {
+      "name": "IncludeDesktopCount",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "description": "是否返回已分配给该用户的云电脑数量。"
+    },
+    {
+      "name": "IncludeDesktopGroupCount",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "description": "是否返回已分配给该用户的云电脑池数量。"
+    },
+    {
+      "name": "OrgId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "企业组织ID。"
+    },
+    {
+      "name": "OwnerType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "账号激活类型。"
+    },
+    {
+      "name": "ExcludeEndUserIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "需精确排除的用户名（EndUserId）列表。"
+    },
+    {
+      "name": "OrderParam",
+      "position": "Query",
+      "type": "Object",
+      "required": false,
+      "description": "支持的排序参数。"
+    },
+    {
+      "name": "Status",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "IsQueryAllSubOrgs",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "IncludeOrgInfo",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "IncludeSupportIdps",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "description": ""
+    }
+  ]
+}

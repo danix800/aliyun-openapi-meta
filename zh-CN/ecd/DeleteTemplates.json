@@ -1,0 +1,22 @@
+{
+  "name": "DeleteTemplates",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TemplateIds",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false,
+      "description": "需要删除的模板ID列表。"
+    },
+    {
+      "name": "BizType",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "> 该参数暂不对外开放使用。"
+    }
+  ]
+}

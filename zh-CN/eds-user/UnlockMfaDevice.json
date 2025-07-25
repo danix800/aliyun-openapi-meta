@@ -1,0 +1,22 @@
+{
+  "name": "UnlockMfaDevice",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "SerialNumber",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "虚拟MFA设备的序列号。可以调用[DescribeMfaDevices](~~DescribeMfaDevices~~)获取。"
+    },
+    {
+      "name": "AdDomain",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "AD办公网络地址。"
+    }
+  ]
+}

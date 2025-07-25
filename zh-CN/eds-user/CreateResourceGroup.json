@@ -1,0 +1,29 @@
+{
+  "name": "CreateResourceGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "ResourceGroupName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "资源组名称。"
+    },
+    {
+      "name": "IsResourceGroupWithOfficeSite",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "description": "> 该参数不对外开放使用。"
+    },
+    {
+      "name": "Platform",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "对于无影云电脑企业版，固定传入`AliyunConsole`。其他平台暂不支持。"
+    }
+  ]
+}

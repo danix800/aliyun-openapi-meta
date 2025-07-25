@@ -1,0 +1,20 @@
+{
+  "name": "MoveUserOrg",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "OrgId",
+      "position": "Formdata",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "EndUserIds",
+      "position": "Formdata",
+      "type": "Array",
+      "required": true
+    }
+  ]
+}

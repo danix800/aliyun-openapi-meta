@@ -1,0 +1,148 @@
+{
+  "name": "DescribeGlobalDesktops",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "地域ID。"
+    },
+    {
+      "name": "DirectoryId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "工作区ID。同OfficeSiteId。"
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "工作区ID。DirectoryId即将弃用，优先使用此字段。"
+    },
+    {
+      "name": "ClientId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "客户端生成的唯一ID。"
+    },
+    {
+      "name": "SessionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "会话ID。\n通过登录接口GetLoginToken获取，返回参数：SessionId。"
+    },
+    {
+      "name": "LoginToken",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "登录凭证。\n通过GetLoginToken接口登录获取，或登录后通过更新接口RefreshLoginToken获取。返回参数：LoginToken。"
+    },
+    {
+      "name": "DesktopStatus",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "云桌面状态。取值范围：\n\n- Pending：等待中\n- Starting：启动中\n- Running：运行中\n- Stopping：停止中\n- Rebuilding：重建中\n- Stopped：已关机\n- Expired：已过期\n- Deleted：已删除"
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "分页查询时每页行数。\n\n- 最大值：500\n- 默认值：10"
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "下一个查询开始的Token，NextToken为空表示没有下一个。"
+    },
+    {
+      "name": "DesktopName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "云桌面名称。"
+    },
+    {
+      "name": "DesktopId",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "云桌面ID。可设置一个或多个，取值范围：1~20。"
+    },
+    {
+      "name": "SearchRegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "搜索地域ID。用于过滤出指定地域的桌面信息。"
+    },
+    {
+      "name": "DesktopAccessType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "连接云桌面时允许使用的接入方式。取值范围：\n\n- INTERNET：只允许客户端通过公网连接云桌面。\n- VPC：只允许处于VPC网络内的客户端连接云桌面。\n- Any：不限制方式。使用客户端连接云桌面时可以自行选择连接方式。\n\n默认值：INTERNET。\n\n> VPC连接方式依赖于阿里云私网连接（PrivateLink）服务，该服务不收取费用。该参数设置为VPC或者Any时，系统将自动为您开通私网连接服务。"
+    },
+    {
+      "name": "QueryFotaUpdate",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "description": "是否查询镜像更新信息。"
+    },
+    {
+      "name": "WithoutLatency",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "description": "是否查询实时桌面信息。当前接口中桌面状态信息有1~3秒延迟，如果需要准确信息可将此值设为true。"
+    },
+    {
+      "name": "OrderBy",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "排序字段，若不指定则按照创建时间倒序。取值为AssignTime：按照分配时间排序。"
+    },
+    {
+      "name": "SortType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "排序方式，默认为增序。取值：\n- ASC：增序\n- DESC：降序"
+    },
+    {
+      "name": "Keyword",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "关键字。支持模糊搜索桌面ID、云桌面名称和终端用户自定义的桌面名称。"
+    },
+    {
+      "name": "LoginRegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "工作区所在的地域ID，使用组织ID登录时置为空。使用工作区ID登录时，该参数必填，使用组织ID登录时，该参数可为空。"
+    },
+    {
+      "name": "Language",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": ""
+    }
+  ]
+}

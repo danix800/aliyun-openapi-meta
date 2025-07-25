@@ -1,0 +1,38 @@
+{
+  "name": "CreateEcdReportTask",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TaskType",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "SubType",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "FilterList",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "ReportFileName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "LangType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

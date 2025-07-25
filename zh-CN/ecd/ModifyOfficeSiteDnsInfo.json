@@ -1,0 +1,29 @@
+{
+  "name": "ModifyOfficeSiteDnsInfo",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "实例所在的地域ID。您可以调用DescribeRegions查看最新的阿里云地域列表。"
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "办公网络ID。"
+    },
+    {
+      "name": "DnsAddress",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "自定义DNS的IP地址。目前支持最多设置两个。"
+    }
+  ]
+}

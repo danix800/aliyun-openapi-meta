@@ -1,0 +1,22 @@
+{
+  "name": "CheckUsedPropertyValue",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "PropertyId",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "description": "属性ID。可以调用[ListProperty](~~ListProperty~~)获取该参数。"
+    },
+    {
+      "name": "PropertyValueId",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "description": "属性值ID。可以调用[ListProperty](~~ListProperty~~)获取该参数。"
+    }
+  ]
+}

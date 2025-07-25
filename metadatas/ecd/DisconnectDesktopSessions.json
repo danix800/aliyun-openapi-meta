@@ -1,0 +1,26 @@
+{
+  "name": "DisconnectDesktopSessions",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Sessions",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    },
+    {
+      "name": "PreCheck",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    }
+  ]
+}

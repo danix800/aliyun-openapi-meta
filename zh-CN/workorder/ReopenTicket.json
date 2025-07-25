@@ -1,0 +1,29 @@
+{
+  "name": "ReopenTicket",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TicketId",
+      "position": "Formdata",
+      "type": "String",
+      "required": true,
+      "description": "工单编号"
+    },
+    {
+      "name": "Content",
+      "position": "Formdata",
+      "type": "String",
+      "required": true,
+      "description": "重开工单回复内容"
+    },
+    {
+      "name": "Uid",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "UID"
+    }
+  ]
+}

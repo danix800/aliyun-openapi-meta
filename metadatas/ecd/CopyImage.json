@@ -1,0 +1,38 @@
+{
+  "name": "CopyImage",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ImageId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DestinationImageName",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DestinationDescription",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DestinationRegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "DescribeKmsKeys",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "地域ID。可以调用[DescribeRegions](~~DescribeRegions~~)获取无影云电脑支持的地域列表。"
+    }
+  ]
+}

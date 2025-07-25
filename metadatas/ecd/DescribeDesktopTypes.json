@@ -1,0 +1,122 @@
+{
+  "name": "DescribeDesktopTypes",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DesktopTypeId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "InstanceTypeFamily",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "CpuCount",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "MemorySize",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "GpuCount",
+      "position": "Query",
+      "type": "Number",
+      "required": false
+    },
+    {
+      "name": "DesktopIdForModify",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OrderType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "AppliedScope",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopGroupIdForModify",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "GpuDriverType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OrderBy",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SortType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Scope",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopTypeIdList",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "SupportMinSessionCount",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "ZoneId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "GpuMemory",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "ScopeSet",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    }
+  ]
+}

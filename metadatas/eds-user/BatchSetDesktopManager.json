@@ -1,0 +1,20 @@
+{
+  "name": "BatchSetDesktopManager",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "Users",
+      "position": "Formdata",
+      "type": "Array",
+      "required": true
+    },
+    {
+      "name": "IsDesktopManager",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "DescribeAutoSnapshotPolicy",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "PolicyId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PolicyName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

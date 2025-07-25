@@ -1,0 +1,78 @@
+{
+  "name": "CreateDrive",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "地域ID。"
+    },
+    {
+      "name": "AliUid",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "description": "阿里云账号ID。"
+    },
+    {
+      "name": "UserId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "用户ID。"
+    },
+    {
+      "name": "DomainId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "存储资源ID。\n> 可通过DescribeDrives接口获取。"
+    },
+    {
+      "name": "ExternalDomainId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "外部存储资源ID。\n> 可通过DescribeDrives接口获取。"
+    },
+    {
+      "name": "ResourceType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "存储资源类型。"
+    },
+    {
+      "name": "Type",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "存储资源用途。"
+    },
+    {
+      "name": "DriveName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "用户级别存储资源名称。"
+    },
+    {
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "用户级别存储资源简介。"
+    },
+    {
+      "name": "ProfileRoaming",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "description": "> 此参数已废弃。"
+    }
+  ]
+}

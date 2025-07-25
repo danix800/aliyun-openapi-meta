@@ -1,0 +1,68 @@
+{
+  "name": "CreateCdsFile",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "CdsId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "FileName",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "FileType",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ParentFileId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "FileLength",
+      "position": "Query",
+      "type": "Long",
+      "required": true
+    },
+    {
+      "name": "FileHash",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ConflictPolicy",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

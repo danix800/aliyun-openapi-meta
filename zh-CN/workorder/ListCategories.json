@@ -1,0 +1,29 @@
+{
+  "name": "ListCategories",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "ProductId",
+      "position": "Formdata",
+      "type": "Long",
+      "required": true,
+      "description": "产品ID, 通过ListProducts接口获取. ProductId为阿里云产品ID, 一个产品下会挂多个Category(工单问题分类)"
+    },
+    {
+      "name": "Name",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "分类问题名称, 支持模糊搜索"
+    },
+    {
+      "name": "Language",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "您使用的语言。取值：\n\n- 中文：zh。\n- 英文：en。\n- 日文：jp。"
+    }
+  ]
+}

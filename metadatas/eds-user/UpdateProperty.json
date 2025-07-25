@@ -1,0 +1,26 @@
+{
+  "name": "UpdateProperty",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "PropertyId",
+      "position": "Formdata",
+      "type": "Long",
+      "required": true
+    },
+    {
+      "name": "PropertyKey",
+      "position": "Formdata",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "PropertyValues",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false
+    }
+  ]
+}

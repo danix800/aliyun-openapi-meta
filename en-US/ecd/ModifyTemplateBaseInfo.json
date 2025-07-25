@@ -1,0 +1,29 @@
+{
+  "name": "ModifyTemplateBaseInfo",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TemplateId",
+      "position": "Formdata",
+      "type": "String",
+      "required": true,
+      "description": "模板ID。"
+    },
+    {
+      "name": "TemplateName",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "模板名称。"
+    },
+    {
+      "name": "Description",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "模板描述。"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "CreateAutoSnapshotPolicy",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "PolicyName",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "RetentionDays",
+      "position": "Query",
+      "type": "Integer",
+      "required": true
+    },
+    {
+      "name": "CronExpression",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

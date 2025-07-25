@@ -1,0 +1,50 @@
+{
+  "name": "DescribeEcdReportTasks",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TaskId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "报表任务ID。"
+    },
+    {
+      "name": "TaskType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "报表类型。"
+    },
+    {
+      "name": "SubType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "报表任务子类型。"
+    },
+    {
+      "name": "Status",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "任务状态。"
+    },
+    {
+      "name": "PageNum",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "第几页，默认查询第1页。"
+    },
+    {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "每页行数。最大值200。"
+    }
+  ]
+}

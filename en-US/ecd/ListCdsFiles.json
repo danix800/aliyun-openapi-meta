@@ -1,0 +1,78 @@
+{
+  "name": "ListCdsFiles",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "分配了网盘的用户ID。"
+    },
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "团队空间ID。"
+    },
+    {
+      "name": "CdsId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "企业网盘ID。"
+    },
+    {
+      "name": "ParentFileId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "父文件ID。可通过本接口的返回参数`FileId`获取。"
+    },
+    {
+      "name": "FileIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "需要查询的文件ID列表。"
+    },
+    {
+      "name": "OrderType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "文件列表排序方式。"
+    },
+    {
+      "name": "Status",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "文件状态。"
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "查询凭证（Token）。取值为上一次调用该接口返回的`NextToken`参数值，初次调用接口时无需设置该参数。"
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "分页查询时，每页最大行数。默认值：100。"
+    },
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "登录的地域ID。可以调用[DescribeRegions](~~196646~~)获取无影云电脑支持的地域列表。"
+    }
+  ]
+}

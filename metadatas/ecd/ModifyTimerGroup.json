@@ -1,0 +1,38 @@
+{
+  "name": "ModifyTimerGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ConfigTimers",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "Name",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

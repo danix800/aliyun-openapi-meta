@@ -1,0 +1,15 @@
+{
+  "name": "RemoveOrg",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "OrgId",
+      "position": "Formdata",
+      "type": "String",
+      "required": true,
+      "description": "组织ID。"
+    }
+  ]
+}

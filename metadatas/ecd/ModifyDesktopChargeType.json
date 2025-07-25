@@ -1,0 +1,62 @@
+{
+  "name": "ModifyDesktopChargeType",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ChargeType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Period",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "PeriodUnit",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "AutoPay",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "DesktopId",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    },
+    {
+      "name": "PromotionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "UseDuration",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "ResellerOwnerUid",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    }
+  ]
+}

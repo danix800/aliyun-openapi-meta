@@ -1,0 +1,29 @@
+{
+  "name": "ModifyUser",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "便捷账号的用户ID，对应控制台上显示的`用户名`字段。"
+    },
+    {
+      "name": "Email",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "便捷账号的邮箱地址。"
+    },
+    {
+      "name": "Phone",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "编辑账号的手机号码。"
+    }
+  ]
+}

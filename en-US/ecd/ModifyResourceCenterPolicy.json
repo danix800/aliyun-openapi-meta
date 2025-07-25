@@ -1,0 +1,50 @@
+{
+  "name": "ModifyResourceCenterPolicy",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "ResourceType",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "资源类型。"
+    },
+    {
+      "name": "ResourceIds",
+      "position": "Query",
+      "type": "Array",
+      "required": true,
+      "description": "资源ID列表。\n可设置0\\~100个。"
+    },
+    {
+      "name": "ResourceRegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "资源所在地域ID。"
+    },
+    {
+      "name": "ProductType",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "产品类型。\n"
+    },
+    {
+      "name": "PolicyGroupType",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "策略类型。"
+    },
+    {
+      "name": "PolicyGroupIds",
+      "position": "Query",
+      "type": "Array",
+      "required": true,
+      "description": "需要绑定的云电脑策略ID列表。\n\n> 最多可以填写1条全局生效的云电脑策略和4条针对指定IP生效的云电脑策略。如果填写的全局生效的云电脑策略超过1条，则仅第1条生效。"
+    }
+  ]
+}

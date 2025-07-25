@@ -1,0 +1,44 @@
+{
+  "name": "AddFilePermission",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "CdsId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "FileId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "MemberList",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    },
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "CreateProperty",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "PropertyKey",
+      "position": "Formdata",
+      "type": "String",
+      "required": true,
+      "description": "属性名。"
+    },
+    {
+      "name": "PropertyValues",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false,
+      "description": "属性值。一个属性下最多可以添加50个不同的属性值。"
+    }
+  ]
+}

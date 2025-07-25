@@ -1,0 +1,29 @@
+{
+  "name": "IsKeepAlive",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "ClientId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "客户端生成的唯一ID。"
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "办公网络ID。"
+    },
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "地域ID。可以调用[DescribeRegions](~~196646~~)获取无影云电脑支持的地域列表。"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "MoveUserOrg",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "OrgId",
+      "position": "Formdata",
+      "type": "String",
+      "required": true,
+      "description": "组织架构ID。"
+    },
+    {
+      "name": "EndUserIds",
+      "position": "Formdata",
+      "type": "Array",
+      "required": true,
+      "description": "用户ID列表。"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "ModifyCustomizedListHeaders",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ListType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Headers",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    }
+  ]
+}

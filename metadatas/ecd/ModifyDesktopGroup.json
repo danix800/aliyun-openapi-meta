@@ -1,0 +1,170 @@
+{
+  "name": "ModifyDesktopGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DesktopGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "OwnBundleId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PolicyGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopGroupName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ScaleStrategyId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "KeepDuration",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "Comments",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MinDesktopsCount",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "MaxDesktopsCount",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "AllowAutoSetup",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "AllowBufferCount",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "ResetType",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "LoadPolicy",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "BindAmount",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "ImageId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Classify",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "RatioThreshold",
+      "position": "Query",
+      "type": "Number",
+      "required": false
+    },
+    {
+      "name": "ConnectDuration",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "IdleDisconnectDuration",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "DisableSessionConfig",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "StopDuration",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "ProfileFollowSwitch",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "FileSystemId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PolicyGroupIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "BuyDesktopsCount",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "DeleteDuration",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    }
+  ]
+}

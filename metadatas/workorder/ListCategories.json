@@ -1,0 +1,26 @@
+{
+  "name": "ListCategories",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "ProductId",
+      "position": "Formdata",
+      "type": "Long",
+      "required": true
+    },
+    {
+      "name": "Name",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Language",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

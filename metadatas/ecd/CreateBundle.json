@@ -1,0 +1,68 @@
+{
+  "name": "CreateBundle",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ImageId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DesktopType",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "RootDiskSizeGib",
+      "position": "Query",
+      "type": "Integer",
+      "required": true
+    },
+    {
+      "name": "BundleName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Language",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "UserDiskSizeGib",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    },
+    {
+      "name": "RootDiskPerformanceLevel",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "UserDiskPerformanceLevel",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

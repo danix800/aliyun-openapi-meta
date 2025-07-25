@@ -1,0 +1,32 @@
+{
+  "name": "ModifyDesktopsPolicyGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "PolicyGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopId",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    },
+    {
+      "name": "PolicyGroupIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "GetTicket",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TicketId",
+      "position": "Formdata",
+      "type": "String",
+      "required": true,
+      "description": "工单编号"
+    },
+    {
+      "name": "Uid",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "UID"
+    }
+  ]
+}

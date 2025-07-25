@@ -1,0 +1,56 @@
+{
+  "name": "ResetDesktops",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DesktopGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PayType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ResetType",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ImageId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "DesktopGroupIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "ResetScope",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

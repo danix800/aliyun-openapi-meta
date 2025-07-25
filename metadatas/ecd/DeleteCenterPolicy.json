@@ -1,0 +1,32 @@
+{
+  "name": "DeleteCenterPolicy",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "ResourceType",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "BusinessType",
+      "position": "Query",
+      "type": "Integer",
+      "required": true
+    },
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "PolicyGroupIds",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    }
+  ]
+}

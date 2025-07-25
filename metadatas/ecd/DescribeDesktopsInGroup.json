@@ -1,0 +1,56 @@
+{
+  "name": "DescribeDesktopsInGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DesktopGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "PayType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "IgnoreDeleted",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "CustomStartTimePeriod",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "CustomEndTimePeriod",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "SetDesktopGroupTimer",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DesktopGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "TimerType",
+      "position": "Query",
+      "type": "Integer",
+      "required": true
+    },
+    {
+      "name": "CronExpression",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ResetType",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "Force",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    }
+  ]
+}

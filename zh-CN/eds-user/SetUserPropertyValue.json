@@ -1,0 +1,36 @@
+{
+  "name": "SetUserPropertyValue",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "UserId",
+      "position": "Formdata",
+      "type": "Long",
+      "required": true,
+      "description": "用户ID。可以调用[DescribeUsers](~~DescribeUsers~~)获取该参数，对应返回参数`Id`的值。"
+    },
+    {
+      "name": "UserName",
+      "position": "Formdata",
+      "type": "String",
+      "required": true,
+      "description": "用户名。可以调用[DescribeUsers](~~DescribeUsers~~)获取该参数，对应返回参数`EndUserId`的值。"
+    },
+    {
+      "name": "PropertyId",
+      "position": "Formdata",
+      "type": "Long",
+      "required": true,
+      "description": "属性ID。可以调用[ListProperty](~~ListProperty~~)获取该参数。"
+    },
+    {
+      "name": "PropertyValueId",
+      "position": "Formdata",
+      "type": "Long",
+      "required": true,
+      "description": "属性值ID。可以调用[ListProperty](~~ListProperty~~)获取该参数。"
+    }
+  ]
+}

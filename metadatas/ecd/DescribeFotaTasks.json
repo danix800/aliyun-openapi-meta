@@ -1,0 +1,50 @@
+{
+  "name": "DescribeFotaTasks",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "TaskUid",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "UserStatus",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "FotaStatus",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Lang",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

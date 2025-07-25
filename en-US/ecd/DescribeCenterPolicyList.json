@@ -1,0 +1,50 @@
+{
+  "name": "DescribeCenterPolicyList",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "PageNumber",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "分页查询时，当前页的页码。    \n默认值：1。"
+    },
+    {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "分页查询时，每页最大行数。"
+    },
+    {
+      "name": "PolicyGroupId",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "云电脑策略ID列表。"
+    },
+    {
+      "name": "Scope",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "云电脑策略的生效范围。"
+    },
+    {
+      "name": "BusinessType",
+      "position": "Query",
+      "type": "Integer",
+      "required": true,
+      "description": "业务类型。"
+    },
+    {
+      "name": "ResourceType",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "资源类型。"
+    }
+  ]
+}

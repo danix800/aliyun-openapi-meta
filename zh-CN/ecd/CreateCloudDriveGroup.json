@@ -1,0 +1,43 @@
+{
+  "name": "CreateCloudDriveGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "地域ID。"
+    },
+    {
+      "name": "CdsId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "无影云盘ID。"
+    },
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "组织团队ID。"
+    },
+    {
+      "name": "TotalSize",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "description": "无影云盘团队空间的容量。单位为Byte，默认不限大小。"
+    },
+    {
+      "name": "AdminUserIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "要设置成团队空间管理员的用户Id列表。"
+    }
+  ]
+}

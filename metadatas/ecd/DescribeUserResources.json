@@ -1,0 +1,164 @@
+{
+  "name": "DescribeUserResources",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "ClientId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ClientType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ClientVersion",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "LoginToken",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "SessionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "LoginRegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SearchRegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OfficeSiteIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "ResourceTypes",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "ProductTypes",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "ResourceIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "ResourceName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ProtocolType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "AccessType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Language",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "CategoryType",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "CategoryId",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "QueryFotaUpdate",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "RefreshFotaUpdate",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "OrderBy",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SortType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "AutoRefresh",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "Scene",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DualCenterForward",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    }
+  ]
+}

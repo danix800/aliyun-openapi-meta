@@ -1,0 +1,15 @@
+{
+  "name": "RemoveProperty",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "PropertyId",
+      "position": "Formdata",
+      "type": "Long",
+      "required": true,
+      "description": "属性ID。您可以调用[ListProperty](~~410890~~)进行查询。"
+    }
+  ]
+}

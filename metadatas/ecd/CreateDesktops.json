@@ -1,0 +1,230 @@
+{
+  "name": "CreateDesktops",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "BundleId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "UserName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "VpcId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Amount",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "DirectoryId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PolicyGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ChargeType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Period",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "PeriodUnit",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "AutoPay",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "AutoRenew",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "PromotionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "UserAssignMode",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Hostname",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "Tag",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "DesktopNameSuffix",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "VolumeEncryptionEnabled",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "VolumeEncryptionKey",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopMemberIp",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "UserCommands",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "BundleModels",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "DesktopTimers",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "MonthDesktopSetting",
+      "position": "Query",
+      "type": "Object",
+      "required": false
+    },
+    {
+      "name": "SnapshotPolicyId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ResourceGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopAttachment",
+      "position": "Query",
+      "type": "Object",
+      "required": false
+    },
+    {
+      "name": "TimerGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SavingPlanId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ResellerOwnerUid",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "ExtendInfo",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "AppRuleId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "QosRuleId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

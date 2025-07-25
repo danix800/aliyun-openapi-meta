@@ -1,0 +1,29 @@
+{
+  "name": "ListTransferFiles",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TaskId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "传输任务ID。"
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "分页查询时每页行数。\n\n最大值：100。\n\n默认值：20。"
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "下一个查询开始的Token，NextToken为空表示没有下一个。"
+    }
+  ]
+}

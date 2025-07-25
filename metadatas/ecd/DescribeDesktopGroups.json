@@ -1,0 +1,128 @@
+{
+  "name": "DescribeDesktopGroups",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopGroupName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Period",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "PeriodUnit",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PolicyGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Status",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "OwnType",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "EndUserIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "ExcludedEndUserIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "ProtocolType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ImageId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "BundleId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "Tag",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "MultiResource",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "DesktopGroupIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "DesktopType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

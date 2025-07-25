@@ -1,0 +1,32 @@
+{
+  "name": "DescribeOrgs",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OrgName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ParentOrgId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

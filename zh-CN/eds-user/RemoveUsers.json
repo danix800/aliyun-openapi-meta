@@ -1,0 +1,15 @@
+{
+  "name": "RemoveUsers",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "Users",
+      "position": "Formdata",
+      "type": "Array",
+      "required": true,
+      "description": "要删除的便捷账号的用户名列表。"
+    }
+  ]
+}

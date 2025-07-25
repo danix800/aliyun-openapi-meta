@@ -1,0 +1,29 @@
+{
+  "name": "AddDevices",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "地域ID。可以调用[DescribeRegions](~~196646~~)获取无影云电脑支持的地域列表。"
+    },
+    {
+      "name": "DeviceIds",
+      "position": "Query",
+      "type": "Array",
+      "required": true,
+      "description": "设备ID列表。可配置1\\~200个。"
+    },
+    {
+      "name": "ClientType",
+      "position": "Query",
+      "type": "Integer",
+      "required": true,
+      "description": "设备类型。"
+    }
+  ]
+}

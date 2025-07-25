@@ -1,0 +1,71 @@
+{
+  "name": "DescribeConfigGroup",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "地域ID。该功能无地域属性，该字段固定填写`cn-shanghai`。"
+    },
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "配置组ID。"
+    },
+    {
+      "name": "Name",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "配置组名称。"
+    },
+    {
+      "name": "Type",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "配置组类型。"
+    },
+    {
+      "name": "ProductType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "配置组使用的产品类型。"
+    },
+    {
+      "name": "Statuses",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "配置组状态列表。"
+    },
+    {
+      "name": "PageNumber",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "当前页码。"
+    },
+    {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "分页查询时，当前页的页码。"
+    },
+    {
+      "name": "GroupIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "配置组ID列表。"
+    }
+  ]
+}

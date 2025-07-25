@@ -1,0 +1,22 @@
+{
+  "name": "DescribeTimerGroup",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "地域ID。该功能无地域属性，该字段固定填写`cn-shanghai`。"
+    },
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "配置组ID。"
+    }
+  ]
+}

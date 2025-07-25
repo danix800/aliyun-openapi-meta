@@ -1,0 +1,22 @@
+{
+  "name": "MoveOrg",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "OrgId",
+      "position": "Formdata",
+      "type": "String",
+      "required": true,
+      "description": "待移动的组织ID。"
+    },
+    {
+      "name": "NewParentOrgId",
+      "position": "Formdata",
+      "type": "String",
+      "required": true,
+      "description": "目标父组织ID。"
+    }
+  ]
+}

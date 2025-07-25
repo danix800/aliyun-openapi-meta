@@ -1,0 +1,50 @@
+{
+  "name": "AttachEndUser",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DeviceId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DirectoryId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "AdDomain",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "UserType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ClientType",
+      "position": "Query",
+      "type": "Integer",
+      "required": true
+    }
+  ]
+}

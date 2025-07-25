@@ -1,0 +1,224 @@
+{
+  "name": "DescribeDesktops",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopStatus",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "UserName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DirectoryId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OfficeSiteName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PolicyGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ChargeType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ExpiredTime",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ProtocolType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "ExcludedEndUserId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "FilterDesktopGroup",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "ManagementFlag",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "QueryFotaUpdate",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "Tag",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "SnapshotPolicyId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OnlyDesktopGroup",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "DesktopGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OsTypes",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "DesktopType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ImageId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "DesktopStatusList",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "GpuInstanceGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "QosRuleId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SubPayType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ResourceGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "FillResourceGroup",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "PageNumber",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "PageSize",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "MultiResource",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    }
+  ]
+}

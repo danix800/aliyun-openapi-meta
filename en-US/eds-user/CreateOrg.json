@@ -1,0 +1,22 @@
+{
+  "name": "CreateOrg",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "OrgName",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "组织名称。"
+    },
+    {
+      "name": "ParentOrgId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "上级组织ID。"
+    }
+  ]
+}

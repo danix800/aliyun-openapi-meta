@@ -1,0 +1,44 @@
+{
+  "name": "ModifyResourceCenterPolicy",
+  "protocol": "HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "ResourceType",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ResourceIds",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    },
+    {
+      "name": "ResourceRegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ProductType",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "PolicyGroupType",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "PolicyGroupIds",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    }
+  ]
+}

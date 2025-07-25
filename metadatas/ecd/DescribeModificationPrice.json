@@ -1,0 +1,62 @@
+{
+  "name": "DescribeModificationPrice",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "InstanceId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "InstanceType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "RootDiskSizeGib",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "UserDiskSizeGib",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "ResourceType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Bandwidth",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "ResourceSpecs",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "ResellerOwnerUid",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    }
+  ]
+}

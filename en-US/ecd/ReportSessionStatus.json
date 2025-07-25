@@ -1,0 +1,50 @@
+{
+  "name": "ReportSessionStatus",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "地域ID。"
+    },
+    {
+      "name": "InstanceId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "实例ID。"
+    },
+    {
+      "name": "SessionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "会话ID。"
+    },
+    {
+      "name": "SessionStatus",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "会话状态。"
+    },
+    {
+      "name": "SessionChangeTime",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "description": "会话变更的持续时间。"
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "连接用户。"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "name": "DescribeImages",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ImageType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ImageStatus",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "GpuCategory",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "ProtocolType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "LanguageType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DesktopInstanceType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ImageId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "OsType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "GpuDriverVersion",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SessionType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "FotaVersion",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ImageName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

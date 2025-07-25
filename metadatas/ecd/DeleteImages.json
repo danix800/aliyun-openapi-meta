@@ -1,0 +1,26 @@
+{
+  "name": "DeleteImages",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ImageId",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    },
+    {
+      "name": "DeleteCascadedBundle",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    }
+  ]
+}

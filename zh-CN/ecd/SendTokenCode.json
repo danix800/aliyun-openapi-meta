@@ -1,0 +1,64 @@
+{
+  "name": "SendTokenCode",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "ClientId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "客户端生成的唯一ID。"
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "办公网络ID。"
+    },
+    {
+      "name": "LoginToken",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "登录凭证。"
+    },
+    {
+      "name": "SessionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "会话ID。"
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "用户名。"
+    },
+    {
+      "name": "ClientOS",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "客户端运行的操作系统。"
+    },
+    {
+      "name": "ClientVersion",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "客户端版本。若使用无影客户端，可在客户端登录界面的“关于”面板上查看该参数。"
+    },
+    {
+      "name": "TokenCode",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "若已在无影云电脑企业版控制台开启客户端二次认证，且识别到当前登录用户有风险时，会发送该二次认证验证码到终端用户邮箱。当`CurrentStage`为`TokenVerify`时必填。"
+    }
+  ]
+}

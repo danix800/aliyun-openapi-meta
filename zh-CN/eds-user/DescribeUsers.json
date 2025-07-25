@@ -1,0 +1,106 @@
+{
+  "name": "DescribeUsers",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "description": "分页查询时每页行数。  \n\n- 取值范围：1~500。  \n- 默认值：200。"
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "下一次查询的Token。首次调用接口时无需设置该参数。      \n如果一次查询结果并没有完整返回所有的结果，则返回的NextToken不为空。您可以在查询中上传返回的NextToken继续查询。"
+    },
+    {
+      "name": "Filter",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "模糊搜索字符串，支持匹配用户名（EndUserId）和邮箱（Email）。该字段支持使用通配符（*），例如将该字段设为`a*m`，则返回用户名或邮箱以`a`开头、以`m`结尾的所有结果。"
+    },
+    {
+      "name": "EndUserIds",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false,
+      "description": "需精确匹配的用户名（EndUserId）列表。"
+    },
+    {
+      "name": "ExcludeEndUserIds",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false,
+      "description": "需精确排除的用户名（EndUserId）列表。"
+    },
+    {
+      "name": "OrgId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "按组织ID精确匹配，查询归属该组织的账号列表。"
+    },
+    {
+      "name": "GroupId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "按用户组ID精确匹配，查询归属该用户组的账号列表。"
+    },
+    {
+      "name": "BizType",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "> 该参数不对外开放使用。"
+    },
+    {
+      "name": "SolutionId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "> 该参数不对外开放使用。"
+    },
+    {
+      "name": "ShowExtras",
+      "position": "Formdata",
+      "type": "Object",
+      "required": false,
+      "description": "查询用户扩展信息。"
+    },
+    {
+      "name": "FilterWithAssignedResources",
+      "position": "Formdata",
+      "type": "Object",
+      "required": false,
+      "description": "根据否分配云资源筛选用户。"
+    },
+    {
+      "name": "IsQueryAllSubOrgs",
+      "position": "Formdata",
+      "type": "Boolean",
+      "required": false,
+      "description": "是否查询子组织下的用户。"
+    },
+    {
+      "name": "FilterWithAssignedResource",
+      "position": "Query",
+      "type": "Object",
+      "required": false,
+      "description": "根据否分配指定的云资源ID筛选用户。"
+    },
+    {
+      "name": "Status",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": ""
+    }
+  ]
+}

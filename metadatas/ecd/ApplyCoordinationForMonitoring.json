@@ -1,0 +1,44 @@
+{
+  "name": "ApplyCoordinationForMonitoring",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Uuid",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "InitiatorType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "CoordinatePolicyType",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ResourceCandidates",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

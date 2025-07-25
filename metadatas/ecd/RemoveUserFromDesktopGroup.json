@@ -1,0 +1,50 @@
+{
+  "name": "RemoveUserFromDesktopGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DesktopGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EndUserIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "DesktopGroupIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "UserOuPath",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "UserGroupName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SimpleUserGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

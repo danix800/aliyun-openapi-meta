@@ -1,0 +1,86 @@
+{
+  "name": "DescribeUserConnectionRecords",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DesktopGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "EndUserType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ConnectStartTimeFrom",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "ConnectStartTimeTo",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "ConnectEndTimeFrom",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "ConnectEndTimeTo",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "ConnectDurationFrom",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "ConnectDurationTo",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "DesktopId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

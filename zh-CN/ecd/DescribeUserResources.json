@@ -1,0 +1,190 @@
+{
+  "name": "DescribeUserResources",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "ClientId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "客户端生成的唯一ID，参考UUID。该参数非敏感字段，无需加密。"
+    },
+    {
+      "name": "ClientType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "客户端的类型。"
+    },
+    {
+      "name": "ClientVersion",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "客户端版本。"
+    },
+    {
+      "name": "LoginToken",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "登录凭证。\n通过`GetLoginToken`接口登录获取，或登录后通过更新接口`RefreshLoginToken`获取。返回参数：LoginToken。"
+    },
+    {
+      "name": "SessionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "会话ID。调用`GetLoginToken`接口获取。"
+    },
+    {
+      "name": "LoginRegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "登录的地域ID，用于办公网络ID登录场景。组织ID登录场景无需填写。"
+    },
+    {
+      "name": "SearchRegionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "搜索地域ID。用于过滤出指定地域的云资源信息。"
+    },
+    {
+      "name": "OfficeSiteIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "办公网络ID列表。AD账号登录时填写。"
+    },
+    {
+      "name": "ResourceTypes",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "资源类型列表，为空则查询所有资源类型。"
+    },
+    {
+      "name": "ProductTypes",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "产品类型列表，为空则查询所有产品类型。"
+    },
+    {
+      "name": "ResourceIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "资源ID列表。\n可设置0\\~100个。"
+    },
+    {
+      "name": "ResourceName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "资源名称，支持模糊搜索。"
+    },
+    {
+      "name": "ProtocolType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "协议类型。该参数仅用于过滤云电脑。"
+    },
+    {
+      "name": "AccessType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "接入类型，不传表示两种都显示。"
+    },
+    {
+      "name": "Language",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "客户端语言。"
+    },
+    {
+      "name": "CategoryType",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "资源一级类目。"
+    },
+    {
+      "name": "CategoryId",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "资源二级类目。"
+    },
+    {
+      "name": "QueryFotaUpdate",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "description": "是否查询云电脑镜像版本信息。"
+    },
+    {
+      "name": "RefreshFotaUpdate",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "description": "是否实时刷新OTA信息。"
+    },
+    {
+      "name": "OrderBy",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "排序字段，若不指定则按照创建时间倒序。"
+    },
+    {
+      "name": "SortType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "排序方式。"
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "分页查询时每页行数。   默认值500。"
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "下一页Token。"
+    },
+    {
+      "name": "AutoRefresh",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "description": "是否立即刷新。\n\n> 为了保证接口响应速度，建议传入`false`。"
+    },
+    {
+      "name": "Scene",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "客户端场景，用于标识排序。请传入`desktop`。"
+    },
+    {
+      "name": "DualCenterForward",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "description": "是否双中心转发。请传入`false`。"
+    }
+  ]
+}

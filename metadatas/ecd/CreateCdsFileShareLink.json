@@ -1,0 +1,92 @@
+{
+  "name": "CreateCdsFileShareLink",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "CdsId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "SharePwd",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Expiration",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Description",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ShareName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DisablePreview",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "DisableSave",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "DisableDownload",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "PreviewLimit",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "SaveLimit",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "DownloadLimit",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "EndUserId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "FileIds",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "GroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

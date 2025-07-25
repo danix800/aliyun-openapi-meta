@@ -1,0 +1,22 @@
+{
+  "name": "BatchSetDesktopManager",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "Users",
+      "position": "Formdata",
+      "type": "Array",
+      "required": true,
+      "description": "便捷账号列表。"
+    },
+    {
+      "name": "IsDesktopManager",
+      "position": "Formdata",
+      "type": "String",
+      "required": false,
+      "description": "该便捷账号是否具备云电脑的本地管理员权限。"
+    }
+  ]
+}

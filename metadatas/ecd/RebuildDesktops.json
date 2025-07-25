@@ -1,0 +1,44 @@
+{
+  "name": "RebuildDesktops",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DesktopId",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    },
+    {
+      "name": "ImageId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OperateType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Language",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "AfterStatus",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

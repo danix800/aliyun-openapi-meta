@@ -1,0 +1,29 @@
+{
+  "name": "UpdateProperty",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "PropertyId",
+      "position": "Formdata",
+      "type": "Long",
+      "required": true,
+      "description": "要修改的属性ID。您可以调用[ListProperty](~~ListProperty~~)进行查询。"
+    },
+    {
+      "name": "PropertyKey",
+      "position": "Formdata",
+      "type": "String",
+      "required": true,
+      "description": "修改后的属性名。"
+    },
+    {
+      "name": "PropertyValues",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false,
+      "description": "修改后该属性的所有属性值列表。\n\n><notice>此处传入的属性值将覆盖原来的属性值，而不是在原有的基础上追加。></notice>"
+    }
+  ]
+}

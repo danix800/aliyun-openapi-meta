@@ -1,0 +1,22 @@
+{
+  "name": "CancelCdsFileShareLink",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "CdsId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "企业网盘ID。"
+    },
+    {
+      "name": "ShareId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "分享ID。"
+    }
+  ]
+}

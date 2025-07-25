@@ -1,0 +1,22 @@
+{
+  "name": "UserBatchJoinGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "GroupId",
+      "position": "Formdata",
+      "type": "String",
+      "required": true,
+      "description": "用户组ID。"
+    },
+    {
+      "name": "EndUserIds",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false,
+      "description": "用户ID列表。"
+    }
+  ]
+}

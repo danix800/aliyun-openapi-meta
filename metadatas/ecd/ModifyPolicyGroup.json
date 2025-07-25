@@ -1,0 +1,368 @@
+{
+  "name": "ModifyPolicyGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "PolicyGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Name",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Clipboard",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "LocalDrive",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "UsbRedirect",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "VisualQuality",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Html5Access",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Html5FileTransfer",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Watermark",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "WatermarkType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "WatermarkTransparency",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PreemptLogin",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DomainList",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PrinterRedirection",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "PreemptLoginUser",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "AuthorizeSecurityPolicyRule",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "RevokeSecurityPolicyRule",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "AuthorizeAccessPolicyRule",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "RevokeAccessPolicyRule",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "ClientType",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "GpuAcceleration",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "UsbSupplyRedirectRule",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "DomainResolveRuleType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DomainResolveRule",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "Recording",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "RecordingStartTime",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "RecordingEndTime",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "RecordingFps",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "RecordingExpires",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "NetRedirect",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "CameraRedirect",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "AppContentProtection",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "RecordContent",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "RecordContentExpires",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "RemoteCoordinate",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "RecordingDuration",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "Scope",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ScopeValue",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "RecordingAudio",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "InternetCommunicationProtocol",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "VideoRedirect",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "WatermarkTransparencyValue",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "WatermarkColor",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "WatermarkDegree",
+      "position": "Query",
+      "type": "Number",
+      "required": false
+    },
+    {
+      "name": "WatermarkFontSize",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "WatermarkFontStyle",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "WatermarkRowAmount",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "EndUserApplyAdminCoordinate",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EndUserGroupCoordinate",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "WatermarkSecurity",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "AdminAccess",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "WatermarkAntiCam",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "WatermarkPower",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "RecordingUserNotify",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "RecordingUserNotifyMessage",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MaxReconnectTime",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "DeviceRedirects",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "DeviceRules",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "WyAssistant",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "name": "DescribeUsers",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Filter",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EndUserIds",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "ExcludeEndUserIds",
+      "position": "Formdata",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "OrgId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "GroupId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "BizType",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SolutionId",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "ShowExtras",
+      "position": "Formdata",
+      "type": "Object",
+      "required": false
+    },
+    {
+      "name": "FilterWithAssignedResources",
+      "position": "Formdata",
+      "type": "Object",
+      "required": false
+    },
+    {
+      "name": "IsQueryAllSubOrgs",
+      "position": "Formdata",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "FilterWithAssignedResource",
+      "position": "Query",
+      "type": "Object",
+      "required": false
+    },
+    {
+      "name": "Status",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    }
+  ]
+}

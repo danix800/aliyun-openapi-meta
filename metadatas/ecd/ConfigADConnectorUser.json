@@ -1,0 +1,38 @@
+{
+  "name": "ConfigADConnectorUser",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "OfficeSiteId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "OUName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "DomainUserName",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DomainPassword",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ListPropertyValue",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "PropertyId",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "description": "属性ID。您可以调用[ListProperty](~~ListProperty~~)进行查询。"
+    }
+  ]
+}

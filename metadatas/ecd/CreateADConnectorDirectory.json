@@ -1,0 +1,86 @@
+{
+  "name": "CreateADConnectorDirectory",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DomainName",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DomainUserName",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DomainPassword",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "DirectoryName",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "EnableAdminAccess",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "DesktopAccessType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SubDomainName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MfaEnabled",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "DnsAddress",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    },
+    {
+      "name": "VSwitchId",
+      "position": "Query",
+      "type": "Array",
+      "required": true
+    },
+    {
+      "name": "SubDomainDnsAddress",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "Specification",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    }
+  ]
+}

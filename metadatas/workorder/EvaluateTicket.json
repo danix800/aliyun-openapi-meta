@@ -1,0 +1,38 @@
+{
+  "name": "EvaluateTicket",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "TicketId",
+      "position": "Formdata",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Solved",
+      "position": "Formdata",
+      "type": "Boolean",
+      "required": true
+    },
+    {
+      "name": "Score",
+      "position": "Formdata",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Content",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Uid",
+      "position": "Formdata",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

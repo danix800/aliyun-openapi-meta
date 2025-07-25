@@ -1,0 +1,50 @@
+{
+  "name": "DescribeCdsFileShareLinks",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST|GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "CdsId",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ShareId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Creators",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "ShareName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Status",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}
