@@ -17,15 +17,57 @@
       "required": false
     },
     {
+      "name": "DesktopName",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
       "name": "SnapshotId",
       "position": "Query",
       "type": "String",
       "required": false
     },
     {
-      "name": "MaxResults",
+      "name": "SnapshotName",
       "position": "Query",
-      "type": "Integer",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SourceDiskType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SnapshotType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "OsType",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Creator",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "StartTime",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "EndTime",
+      "position": "Query",
+      "type": "String",
       "required": false
     },
     {
@@ -35,22 +77,10 @@
       "required": false
     },
     {
-      "name": "ClientId",
+      "name": "MaxResults",
       "position": "Query",
-      "type": "String",
-      "required": true
-    },
-    {
-      "name": "SessionId",
-      "position": "Query",
-      "type": "String",
+      "type": "Integer",
       "required": false
-    },
-    {
-      "name": "LoginToken",
-      "position": "Query",
-      "type": "String",
-      "required": true
     }
   ]
 }

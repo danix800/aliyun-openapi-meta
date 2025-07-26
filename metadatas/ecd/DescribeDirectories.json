@@ -11,15 +11,39 @@
       "required": true
     },
     {
-      "name": "ClientId",
+      "name": "DirectoryType",
       "position": "Query",
       "type": "String",
-      "required": true
+      "required": false
+    },
+    {
+      "name": "DirectoryStatus",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
     },
     {
       "name": "DirectoryId",
       "position": "Query",
       "type": "Array",
+      "required": false
+    },
+    {
+      "name": "Status",
+      "position": "Query",
+      "type": "String",
       "required": false
     }
   ]

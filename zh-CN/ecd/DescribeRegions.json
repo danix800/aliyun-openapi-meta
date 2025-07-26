@@ -8,15 +8,15 @@
       "name": "RegionId",
       "position": "Query",
       "type": "String",
-      "required": false,
+      "required": true,
       "description": "地域ID。"
     },
     {
-      "name": "ClientId",
+      "name": "AcceptLanguage",
       "position": "Query",
       "type": "String",
-      "required": true,
-      "description": "客户端生成的唯一ID。"
+      "required": false,
+      "description": "指定业务Location的展示语言，默认是中文。 "
     }
   ]
 }

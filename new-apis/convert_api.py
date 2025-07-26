@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+import shutil
 
 def convert_type(param_schema):
     """Converts parameter type based on schema."""
@@ -61,8 +62,9 @@ def main():
     for lang in ['zh-CN', 'en-US', 'metadatas']:
         output_dir = f'../{lang}/{product_name}/'
 
-        if not os.path.exists(output_dir):
-            os.makedirs(output_dir)
+        if os.path.exists(output_dir):
+            shutil.rmtree(output_dir)
+        os.makedirs(output_dir)
 
         apis = source_data.get('apis', {})
         api_names = list(apis.keys())
@@ -81,28 +83,27 @@ def main():
         else:
             products_data = {"products": []}
 
-        product_entry = next((p for p in products_data['products'] if p['code'] == product_code), None)
+        # Remove existing product entry if it exists
+        products_data['products'] = [p for p in products_data['products'] if p.get('code') != product_code]
 
-        if product_entry:
-            product_entry['apis'] = sorted(list(set(product_entry.get('apis', []) + api_names)))
-        else:
-            endpoints = source_data.get('endpoints', [])
-            regional_endpoints = {e['regionId']: e['endpoint'] for e in endpoints}
+        # Create and add the new product entry
+        endpoints = source_data.get('endpoints', [])
+        regional_endpoints = {e['regionId']: e['endpoint'] for e in endpoints}
 
-            product_entry = {
-                "code": product_code,
-                "version": product_info.get('version', ''),
-                "name": {
-                    "en": product_info.get('title', ''),
-                    "zh": product_info.get('title', '')
-                },
-                "location_service_code": "",
-                "regional_endpoints": regional_endpoints,
-                "global_endpoint": "",
-                "api_style": "rpc",
-                "apis": sorted(api_names)
-            }
-            products_data['products'].append(product_entry)
+        new_product_entry = {
+            "code": product_code,
+            "version": product_info.get('version', ''),
+            "name": {
+                "en": product_info.get('title', ''),
+                "zh": product_info.get('title', '')
+            },
+            "location_service_code": "",
+            "regional_endpoints": regional_endpoints,
+            "global_endpoint": "",
+            "api_style": "rpc",
+            "apis": sorted(api_names)
+        }
+        products_data['products'].append(new_product_entry)
 
         with open(products_file, 'w', encoding='utf-8') as f:
             json.dump(products_data, f, indent=2, ensure_ascii=False)

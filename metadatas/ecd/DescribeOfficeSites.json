@@ -11,15 +11,45 @@
       "required": true
     },
     {
-      "name": "ClientId",
+      "name": "OfficeSiteType",
       "position": "Query",
       "type": "String",
-      "required": true
+      "required": false
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false
     },
     {
       "name": "OfficeSiteId",
       "position": "Query",
       "type": "Array",
+      "required": false
+    },
+    {
+      "name": "Status",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "SecurityProtection",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "VpcId",
+      "position": "Query",
+      "type": "String",
       "required": false
     }
   ]

@@ -11,10 +11,11 @@ function generate() {
   # shellcheck disable=SC1091
   source .venv/bin/activate
 
-  python3 merge_apis.py ecd
+  # python3 merge_apis.py ecd
 
   local -a prods=()
-  prods+=(ecd)
+  prods+=(ecd-20200930)
+  prods+=(ecd-20201002)
   prods+=(eds-user)
   prods+=(workorder)
 

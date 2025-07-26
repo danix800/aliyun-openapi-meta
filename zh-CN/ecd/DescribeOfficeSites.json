@@ -12,11 +12,25 @@
       "description": "地域ID。可以调用[DescribeRegions](~~196646~~)获取无影云电脑支持的地域列表。"
     },
     {
-      "name": "ClientId",
+      "name": "OfficeSiteType",
       "position": "Query",
       "type": "String",
-      "required": true,
-      "description": "客户端生成的唯一ID。"
+      "required": false,
+      "description": "办公网络的账号体系类型。"
+    },
+    {
+      "name": "MaxResults",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "分页查询时每页行数。    \n\n- 最大值：100。    \n- 默认值：10。"
+    },
+    {
+      "name": "NextToken",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "下一个查询开始的Token。"
     },
     {
       "name": "OfficeSiteId",
@@ -24,6 +38,27 @@
       "type": "Array",
       "required": false,
       "description": "办公网络ID。可设置1~100个。"
+    },
+    {
+      "name": "Status",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "办公网络状态。"
+    },
+    {
+      "name": "SecurityProtection",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "办公网络安全防护配置。"
+    },
+    {
+      "name": "VpcId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": ""
     }
   ]
 }

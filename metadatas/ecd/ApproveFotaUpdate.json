@@ -11,46 +11,16 @@
       "required": true
     },
     {
-      "name": "ClientId",
-      "position": "Query",
-      "type": "String",
-      "required": true
-    },
-    {
-      "name": "SessionId",
-      "position": "Query",
-      "type": "String",
-      "required": false
-    },
-    {
-      "name": "LoginToken",
-      "position": "Query",
-      "type": "String",
-      "required": true
-    },
-    {
       "name": "DesktopId",
       "position": "Query",
       "type": "String",
-      "required": false
+      "required": true
     },
     {
       "name": "AppVersion",
       "position": "Query",
       "type": "String",
       "required": true
-    },
-    {
-      "name": "Uuid",
-      "position": "Query",
-      "type": "String",
-      "required": false
-    },
-    {
-      "name": "TargetStatus",
-      "position": "Query",
-      "type": "String",
-      "required": false
     }
   ]
 }

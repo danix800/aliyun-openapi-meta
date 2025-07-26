@@ -1,0 +1,64 @@
+{
+  "name": "ApproveFotaUpdate",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET|POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "RegionId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "地域ID。"
+    },
+    {
+      "name": "ClientId",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "客户端生成的唯一ID。"
+    },
+    {
+      "name": "SessionId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "会话ID。"
+    },
+    {
+      "name": "LoginToken",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "登录凭证。"
+    },
+    {
+      "name": "DesktopId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "云电脑ID。"
+    },
+    {
+      "name": "AppVersion",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "应用版本。"
+    },
+    {
+      "name": "Uuid",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "客户端唯一标识。若使用无影客户端，可在客户端登录界面的“关于”面板上查看该参数。"
+    },
+    {
+      "name": "TargetStatus",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "指定云电脑升级之后的状态。\n\n> 该参数暂未对外开放使用。目前升级完成后，云电脑状态将变成`RUNNING`。"
+    }
+  ]
+}
