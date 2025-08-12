@@ -1,0 +1,43 @@
+{
+  "name": "ConsumerGroupHeartBeat",
+  "protocol": "HTTPS|HTTP",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "Logstore名称。"
+    },
+    {
+      "name": "consumerGroup",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "消费组名称，同一Project中消费组名称为唯一值。"
+    },
+    {
+      "name": "consumer",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "消费者。"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Array",
+      "required": true,
+      "description": "正在消费的Shard ID列表。"
+    }
+  ]
+}

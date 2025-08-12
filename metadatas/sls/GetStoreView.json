@@ -1,0 +1,20 @@
+{
+  "name": "GetStoreView",
+  "protocol": "HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "name",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

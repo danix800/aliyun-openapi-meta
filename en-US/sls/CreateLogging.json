@@ -1,0 +1,22 @@
+{
+  "name": "CreateLogging",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": true,
+      "description": "请求结构体。"
+    }
+  ]
+}

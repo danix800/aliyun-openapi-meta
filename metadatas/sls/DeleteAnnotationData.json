@@ -1,0 +1,20 @@
+{
+  "name": "DeleteAnnotationData",
+  "protocol": "HTTPS",
+  "method": "DELETE",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "datasetId",
+      "position": "Path",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "annotationdataId",
+      "position": "Path",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

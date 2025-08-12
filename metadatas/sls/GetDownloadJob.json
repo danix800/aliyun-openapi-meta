@@ -1,0 +1,20 @@
+{
+  "name": "GetDownloadJob",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "downloadJobName",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

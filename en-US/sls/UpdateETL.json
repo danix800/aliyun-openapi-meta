@@ -1,0 +1,29 @@
+{
+  "name": "UpdateETL",
+  "protocol": "HTTP|HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称"
+    },
+    {
+      "name": "etlName",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "数据加工名称"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": false,
+      "description": "更新的数据加工配置"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "GetCursor",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "project 名称。"
+    },
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "Logstore名称。"
+    },
+    {
+      "name": "shardId",
+      "position": "Path",
+      "type": "Integer",
+      "required": true,
+      "description": "Shard ID。"
+    },
+    {
+      "name": "from",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "时间点（Unix时间戳）或者字符串`begin`、`end`。"
+    }
+  ]
+}

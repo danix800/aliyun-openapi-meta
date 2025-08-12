@@ -1,0 +1,29 @@
+{
+  "name": "CreateIndex",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "Logstore的名称。"
+    },
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "String",
+      "required": false,
+      "description": "请求消息体。"
+    }
+  ]
+}

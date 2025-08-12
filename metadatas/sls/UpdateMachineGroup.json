@@ -1,0 +1,26 @@
+{
+  "name": "UpdateMachineGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "groupName",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": true
+    }
+  ]
+}

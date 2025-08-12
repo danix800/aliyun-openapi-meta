@@ -1,0 +1,44 @@
+{
+  "name": "GetContextLogs",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "pack_id",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "pack_meta",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "back_lines",
+      "position": "Query",
+      "type": "Long",
+      "required": true
+    },
+    {
+      "name": "forward_lines",
+      "position": "Query",
+      "type": "Long",
+      "required": true
+    }
+  ]
+}

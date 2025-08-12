@@ -1,0 +1,36 @@
+{
+  "name": "GetCheckPoint",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project 名称。"
+    },
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "Logstore名称。"
+    },
+    {
+      "name": "consumerGroup",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "消费组名称。"
+    },
+    {
+      "name": "shard",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "Shard ID。\n\n- 如果指定的Shard不存在，则返回空列表。\n- 如果不指定Shard，则返回所有Shard的Checkpoint。"
+    }
+  ]
+}

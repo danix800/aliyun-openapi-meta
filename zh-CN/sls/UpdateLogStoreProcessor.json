@@ -1,0 +1,29 @@
+{
+  "name": "UpdateLogStoreProcessor",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "LogStore名称。"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": false,
+      "description": "请求结构体。"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "GetContextLogs",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "Logstore名称。"
+    },
+    {
+      "name": "pack_id",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "起始日志所属的LogGroup的唯一身份标识。"
+    },
+    {
+      "name": "pack_meta",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "起始日志在对应LogGroup内的唯一上下文结构标识。"
+    },
+    {
+      "name": "back_lines",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "description": "指定起始日志往前（上文）的日志条数，取值范围为`(0,100]`。"
+    },
+    {
+      "name": "forward_lines",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "description": "指定起始日志往后（下文）的日志条数，取值范围为`(0,100]`。"
+    }
+  ]
+}

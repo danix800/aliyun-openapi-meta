@@ -1,0 +1,22 @@
+{
+  "name": "UpdateAnnotationDataSet",
+  "protocol": "HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "datasetId",
+      "position": "Path",
+      "type": "String",
+      "required": false,
+      "description": "数据集唯一标识"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "String",
+      "required": false,
+      "description": "请求数据集结构体。"
+    }
+  ]
+}

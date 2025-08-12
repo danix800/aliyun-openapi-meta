@@ -1,0 +1,15 @@
+{
+  "name": "UpdateAnnotationLabel",
+  "protocol": "HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "String",
+      "required": false,
+      "description": "请求标签表结构体。"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "UpdateSavedSearch",
+  "protocol": "HTTP|HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "savedsearchName",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "要更新的快速查询的名称。"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": false,
+      "description": "快速查询结构体。"
+    }
+  ]
+}

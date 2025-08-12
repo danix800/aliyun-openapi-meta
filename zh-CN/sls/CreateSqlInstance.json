@@ -1,0 +1,22 @@
+{
+  "name": "CreateSqlInstance",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "需要开启SQL独享版的Project名称。"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": false,
+      "description": "请求结构体。"
+    }
+  ]
+}

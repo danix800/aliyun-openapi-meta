@@ -1,0 +1,22 @@
+{
+  "name": "UpdateProject",
+  "protocol": "HTTP|HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": true,
+      "description": "请求结构体。"
+    },
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    }
+  ]
+}

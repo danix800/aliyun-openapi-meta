@@ -1,0 +1,20 @@
+{
+  "name": "GetDashboard",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "dashboardName",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

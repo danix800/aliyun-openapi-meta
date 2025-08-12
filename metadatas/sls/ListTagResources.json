@@ -1,0 +1,26 @@
+{
+  "name": "ListTagResources",
+  "protocol": "HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "resourceType",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "resourceId",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    },
+    {
+      "name": "tags",
+      "position": "Query",
+      "type": "Array",
+      "required": false
+    }
+  ]
+}

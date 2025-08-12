@@ -1,0 +1,50 @@
+{
+  "name": "GetHistograms",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "project 名称。"
+    },
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "Logstore名称。"
+    },
+    {
+      "name": "from",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "description": "子时间区间的开始时间点。UNIX时间戳格式，表示从1970-1-1 00:00:00 UTC计算起的秒数。"
+    },
+    {
+      "name": "to",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "description": "子时间区间的结束时间点。UNIX时间戳格式，表示从1970-1-1 00:00:00 UTC计算起的秒数。"
+    },
+    {
+      "name": "topic",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "日志主题。"
+    },
+    {
+      "name": "query",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "查询语句。仅支持查询语句，不支持分析语句。关于查询语句的详细语法，请参见[查询语法](~~43772~~)。"
+    }
+  ]
+}

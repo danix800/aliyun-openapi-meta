@@ -1,0 +1,29 @@
+{
+  "name": "PutWebtracking",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "logstoreName",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "Logstore名称。"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": true,
+      "description": "请求消息体。"
+    }
+  ]
+}

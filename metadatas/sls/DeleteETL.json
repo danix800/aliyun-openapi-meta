@@ -1,0 +1,20 @@
+{
+  "name": "DeleteETL",
+  "protocol": "HTTP|HTTPS",
+  "method": "DELETE",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "etlName",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

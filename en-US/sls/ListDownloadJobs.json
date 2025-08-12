@@ -1,0 +1,36 @@
+{
+  "name": "ListDownloadJobs",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称"
+    },
+    {
+      "name": "offset",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "description": "查询开始行，默认值为0。"
+    },
+    {
+      "name": "size",
+      "position": "Query",
+      "type": "Long",
+      "required": false,
+      "description": "单次查询需要获取的日志下载任务数量"
+    },
+    {
+      "name": "logstore",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "Logstore名称"
+    }
+  ]
+}

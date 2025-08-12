@@ -1,0 +1,68 @@
+{
+  "name": "GetLogs",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "from",
+      "position": "Query",
+      "type": "Integer",
+      "required": true
+    },
+    {
+      "name": "to",
+      "position": "Query",
+      "type": "Integer",
+      "required": true
+    },
+    {
+      "name": "query",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "topic",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "line",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "offset",
+      "position": "Query",
+      "type": "Long",
+      "required": false
+    },
+    {
+      "name": "reverse",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "powerSql",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    }
+  ]
+}

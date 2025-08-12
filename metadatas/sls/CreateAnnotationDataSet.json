@@ -1,0 +1,20 @@
+{
+  "name": "CreateAnnotationDataSet",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "datasetId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

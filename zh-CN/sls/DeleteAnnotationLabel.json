@@ -1,0 +1,15 @@
+{
+  "name": "DeleteAnnotationLabel",
+  "protocol": "HTTPS",
+  "method": "DELETE",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "labelId",
+      "position": "Path",
+      "type": "String",
+      "required": false,
+      "description": "标签ID。"
+    }
+  ]
+}

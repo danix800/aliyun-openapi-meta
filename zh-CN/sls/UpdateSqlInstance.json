@@ -1,0 +1,22 @@
+{
+  "name": "UpdateSqlInstance",
+  "protocol": "HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "需要开启 SQL 独享版的 Project 名称。"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": false,
+      "description": "请求结构体。"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "DeleteSavedSearch",
+  "protocol": "HTTP|HTTPS",
+  "method": "DELETE",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "savedsearchName",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "待删除的快速查询名称。"
+    }
+  ]
+}

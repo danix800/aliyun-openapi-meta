@@ -1,0 +1,22 @@
+{
+  "name": "PutProjectTransferAcceleration",
+  "protocol": "HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": false,
+      "description": "请求body。"
+    }
+  ]
+}

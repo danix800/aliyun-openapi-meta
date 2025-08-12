@@ -1,0 +1,29 @@
+{
+  "name": "DeleteConsumerGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "DELETE",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "Logstore名称。"
+    },
+    {
+      "name": "consumerGroup",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "消费组名称。"
+    }
+  ]
+}

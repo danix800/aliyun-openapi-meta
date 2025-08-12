@@ -1,0 +1,22 @@
+{
+  "name": "GetMachineGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "machineGroup",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "机器组名称。"
+    }
+  ]
+}

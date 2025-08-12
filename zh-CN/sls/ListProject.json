@@ -1,0 +1,43 @@
+{
+  "name": "ListProject",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "projectName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "Project名称。"
+    },
+    {
+      "name": "offset",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "查询开始行，默认值为0。"
+    },
+    {
+      "name": "size",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "分页查询时，设置的每页行数。默认值为100，最多返回500个Project信息。"
+    },
+    {
+      "name": "resourceGroupId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "资源组ID。"
+    },
+    {
+      "name": "fetchQuota",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "description": ""
+    }
+  ]
+}

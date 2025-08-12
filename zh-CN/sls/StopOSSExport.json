@@ -1,0 +1,22 @@
+{
+  "name": "StopOSSExport",
+  "protocol": "HTTP|HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称"
+    },
+    {
+      "name": "ossExportName",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "已存在的唯一任务名称"
+    }
+  ]
+}

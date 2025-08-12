@@ -1,0 +1,38 @@
+{
+  "name": "ConsumerGroupHeartBeat",
+  "protocol": "HTTPS|HTTP",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "consumerGroup",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "consumer",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Array",
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "SplitShard",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "shard",
+      "position": "Path",
+      "type": "Integer",
+      "required": true
+    },
+    {
+      "name": "key",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "shardCount",
+      "position": "Query",
+      "type": "Integer",
+      "required": false
+    }
+  ]
+}

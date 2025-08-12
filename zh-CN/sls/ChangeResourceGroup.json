@@ -1,0 +1,22 @@
+{
+  "name": "ChangeResourceGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": false,
+      "description": "资源所属的Project名称。"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": false,
+      "description": "请求结构体。"
+    }
+  ]
+}

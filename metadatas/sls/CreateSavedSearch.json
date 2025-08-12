@@ -1,0 +1,20 @@
+{
+  "name": "CreateSavedSearch",
+  "protocol": "HTTP|HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": true
+    },
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

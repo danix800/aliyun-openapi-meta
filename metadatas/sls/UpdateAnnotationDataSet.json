@@ -1,0 +1,20 @@
+{
+  "name": "UpdateAnnotationDataSet",
+  "protocol": "HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "datasetId",
+      "position": "Path",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

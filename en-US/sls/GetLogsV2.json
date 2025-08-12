@@ -1,0 +1,36 @@
+{
+  "name": "GetLogsV2",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "project 名称。"
+    },
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "logstore 名称。"
+    },
+    {
+      "name": "Accept-Encoding",
+      "position": "Header",
+      "type": "String",
+      "required": true,
+      "description": "压缩方式\n\n- Java、Python、Go目前支持lz4 、gzip 解压缩\n\n- php、Js、C#目前仅支持gzip解压缩"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": false,
+      "description": "请求结构体。"
+    }
+  ]
+}

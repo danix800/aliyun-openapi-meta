@@ -1,0 +1,29 @@
+{
+  "name": "GetCollectionPolicy",
+  "protocol": "HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "policyName",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "规则名称。"
+    },
+    {
+      "name": "productCode",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "产品编码。"
+    },
+    {
+      "name": "dataCode",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "日志类型编码。"
+    }
+  ]
+}

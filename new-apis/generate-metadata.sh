@@ -17,6 +17,7 @@ function generate() {
   prods+=(ecd)
   prods+=(ecd-20201002)
   prods+=(eds-user)
+  prods+=(sls)
   prods+=(workorder)
 
   local prod

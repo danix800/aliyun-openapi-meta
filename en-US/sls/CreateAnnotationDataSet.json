@@ -1,0 +1,22 @@
+{
+  "name": "CreateAnnotationDataSet",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "String",
+      "required": false,
+      "description": "请求数据集结构体参数"
+    },
+    {
+      "name": "datasetId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "数据集唯一标识"
+    }
+  ]
+}

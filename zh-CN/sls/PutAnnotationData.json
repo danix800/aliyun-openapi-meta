@@ -1,0 +1,29 @@
+{
+  "name": "PutAnnotationData",
+  "protocol": "HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "datasetId",
+      "position": "Path",
+      "type": "String",
+      "required": false,
+      "description": "数据集唯一标识"
+    },
+    {
+      "name": "annotationdataId",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "数据的唯一标识"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": false,
+      "description": "请求结构体。"
+    }
+  ]
+}

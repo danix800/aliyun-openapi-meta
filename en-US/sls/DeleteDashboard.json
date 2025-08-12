@@ -1,0 +1,22 @@
+{
+  "name": "DeleteDashboard",
+  "protocol": "HTTP|HTTPS",
+  "method": "DELETE",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "dashboardName",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "仪表盘名称。"
+    }
+  ]
+}

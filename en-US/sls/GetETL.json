@@ -1,0 +1,22 @@
+{
+  "name": "GetETL",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": false,
+      "description": "Project名称"
+    },
+    {
+      "name": "etlName",
+      "position": "Path",
+      "type": "String",
+      "required": false,
+      "description": "数据加工名称"
+    }
+  ]
+}

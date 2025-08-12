@@ -1,0 +1,22 @@
+{
+  "name": "GetMetricStore",
+  "protocol": "HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "日志项目名称"
+    },
+    {
+      "name": "name",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "时序库名称"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "UpdateAlert",
+  "protocol": "HTTP|HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称"
+    },
+    {
+      "name": "alertName",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "告警规则ID"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": false,
+      "description": "更新告警规则的配置"
+    }
+  ]
+}

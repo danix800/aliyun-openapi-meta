@@ -1,0 +1,20 @@
+{
+  "name": "DeleteLogtailPipelineConfig",
+  "protocol": "HTTPS",
+  "method": "DELETE",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "configName",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

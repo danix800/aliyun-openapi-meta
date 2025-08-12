@@ -1,0 +1,22 @@
+{
+  "name": "DeleteIngestProcessor",
+  "protocol": "HTTPS",
+  "method": "DELETE",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "processorName",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "写入处理器标识。"
+    }
+  ]
+}

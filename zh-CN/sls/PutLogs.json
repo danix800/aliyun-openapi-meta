@@ -1,0 +1,36 @@
+{
+  "name": "PutLogs",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "Logstore名称。"
+    },
+    {
+      "name": "x-log-compresstype",
+      "position": "Header",
+      "type": "String",
+      "required": true,
+      "description": "日志压缩类型，目前支持lz4、gzip两种类型。"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "String",
+      "required": false,
+      "description": "压缩后的 pb 日志数据"
+    }
+  ]
+}

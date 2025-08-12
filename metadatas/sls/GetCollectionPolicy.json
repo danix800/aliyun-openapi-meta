@@ -1,0 +1,26 @@
+{
+  "name": "GetCollectionPolicy",
+  "protocol": "HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "policyName",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "productCode",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "dataCode",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

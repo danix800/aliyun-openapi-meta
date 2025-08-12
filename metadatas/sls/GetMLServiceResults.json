@@ -1,0 +1,32 @@
+{
+  "name": "GetMLServiceResults",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "serviceName",
+      "position": "Path",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "allowBuiltin",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "version",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

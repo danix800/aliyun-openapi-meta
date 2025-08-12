@@ -1,0 +1,29 @@
+{
+  "name": "ListTagResources",
+  "protocol": "HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "resourceType",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "资源的类型。\n- project：项目。\n- logstore：日志库。\n- dashboard：仪表盘。\n- machinegroup：机器组。\n- logtailconfig：logtail配置。"
+    },
+    {
+      "name": "resourceId",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "查询的资源ID列表。resourceId与tags应至少存在一个。"
+    },
+    {
+      "name": "tags",
+      "position": "Query",
+      "type": "Array",
+      "required": false,
+      "description": "精确查询时，用于过滤的标签键值对。resourceId与tags应至少配置一个。\n\n最多设置20个tag。"
+    }
+  ]
+}

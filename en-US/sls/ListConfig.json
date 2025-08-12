@@ -1,0 +1,43 @@
+{
+  "name": "ListConfig",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "logstoreName",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "Logstore名称。"
+    },
+    {
+      "name": "offset",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "description": "查询开始行。默认值为0。"
+    },
+    {
+      "name": "size",
+      "position": "Query",
+      "type": "Long",
+      "required": true,
+      "description": "分页查询时，设置的每页行数。最大值为500。"
+    },
+    {
+      "name": "configName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "Logtail配置名称，用于模糊搜索。"
+    }
+  ]
+}

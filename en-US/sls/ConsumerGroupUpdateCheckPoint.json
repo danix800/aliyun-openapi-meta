@@ -1,0 +1,50 @@
+{
+  "name": "ConsumerGroupUpdateCheckPoint",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "Logstore名称。"
+    },
+    {
+      "name": "consumerGroup",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "消费组名称。"
+    },
+    {
+      "name": "consumer",
+      "position": "Query",
+      "type": "String",
+      "required": true,
+      "description": "消费者。"
+    },
+    {
+      "name": "forceSuccess",
+      "position": "Query",
+      "type": "Boolean",
+      "required": false,
+      "description": "是否强制更新。\n  - true：强制更新\n  - false：不强制更新"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": false,
+      "description": "Shard ID。"
+    }
+  ]
+}

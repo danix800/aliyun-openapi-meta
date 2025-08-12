@@ -1,0 +1,36 @@
+{
+  "name": "UpdateMachineGroupMachine",
+  "protocol": "HTTP|HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "machineGroup",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "机器组名称。"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Array",
+      "required": true,
+      "description": "请求结构体。要添加或删除的机器列表。"
+    },
+    {
+      "name": "action",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "add表示添加机器到机器组中， delete表示从机器组中删除机器。"
+    }
+  ]
+}

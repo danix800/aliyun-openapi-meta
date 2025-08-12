@@ -1,0 +1,29 @@
+{
+  "name": "ListAnnotationData",
+  "protocol": "HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "offset",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "起始行"
+    },
+    {
+      "name": "size",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "分页查询时，设置的每页行数。"
+    },
+    {
+      "name": "datasetId",
+      "position": "Path",
+      "type": "String",
+      "required": false,
+      "description": "数据集唯一标识"
+    }
+  ]
+}

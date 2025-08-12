@@ -1,0 +1,36 @@
+{
+  "name": "ListOSSExports",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称"
+    },
+    {
+      "name": "offset",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "查询开始行，默认值为0。"
+    },
+    {
+      "name": "size",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "指定查询数量，默认值为10。"
+    },
+    {
+      "name": "logstore",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": ""
+    }
+  ]
+}

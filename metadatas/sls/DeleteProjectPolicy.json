@@ -1,0 +1,14 @@
+{
+  "name": "DeleteProjectPolicy",
+  "protocol": "HTTPS",
+  "method": "DELETE",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "PullLogs",
+  "protocol": "HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "logStore",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "shardId",
+      "position": "Path",
+      "type": "Integer",
+      "required": true
+    },
+    {
+      "name": "cursor",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "count",
+      "position": "Query",
+      "type": "Integer",
+      "required": true
+    },
+    {
+      "name": "end_cursor",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "query",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "Accept-Encoding",
+      "position": "Header",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

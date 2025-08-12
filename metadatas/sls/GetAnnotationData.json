@@ -1,0 +1,20 @@
+{
+  "name": "GetAnnotationData",
+  "protocol": "HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "datasetId",
+      "position": "Path",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "annotationdataId",
+      "position": "Path",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

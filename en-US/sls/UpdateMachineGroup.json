@@ -1,0 +1,29 @@
+{
+  "name": "UpdateMachineGroup",
+  "protocol": "HTTP|HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "groupName",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "机器组名称。"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": true,
+      "description": "请求体结构。"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "DisableAlert",
+  "protocol": "HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称"
+    },
+    {
+      "name": "alertName",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "告警规则ID"
+    }
+  ]
+}

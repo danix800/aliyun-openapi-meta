@@ -1,0 +1,32 @@
+{
+  "name": "GetLogsV2",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "Accept-Encoding",
+      "position": "Header",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "DeleteDownloadJob",
+  "protocol": "HTTP|HTTPS",
+  "method": "DELETE",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "downloadJobName",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "日志下载任务名称"
+    },
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称"
+    }
+  ]
+}

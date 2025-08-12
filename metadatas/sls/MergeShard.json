@@ -1,0 +1,26 @@
+{
+  "name": "MergeShard",
+  "protocol": "HTTPS",
+  "method": "POST",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "shard",
+      "position": "Path",
+      "type": "Integer",
+      "required": true
+    }
+  ]
+}

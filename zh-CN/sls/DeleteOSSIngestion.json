@@ -1,0 +1,22 @@
+{
+  "name": "DeleteOSSIngestion",
+  "protocol": "HTTP|HTTPS",
+  "method": "DELETE",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称"
+    },
+    {
+      "name": "ossIngestionName",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "OSS导入任务名称"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "PutAnnotationData",
+  "protocol": "HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "datasetId",
+      "position": "Path",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "annotationdataId",
+      "position": "Query",
+      "type": "String",
+      "required": false
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": false
+    }
+  ]
+}

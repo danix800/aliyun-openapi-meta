@@ -1,0 +1,22 @@
+{
+  "name": "GetAnnotationData",
+  "protocol": "HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "datasetId",
+      "position": "Path",
+      "type": "String",
+      "required": false,
+      "description": "数据集唯一标识"
+    },
+    {
+      "name": "annotationdataId",
+      "position": "Path",
+      "type": "String",
+      "required": false,
+      "description": "数据的唯一标识"
+    }
+  ]
+}

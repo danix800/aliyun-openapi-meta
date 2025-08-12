@@ -1,0 +1,43 @@
+{
+  "name": "ListConsumeProcessors",
+  "protocol": "HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "processorName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "消费处理器标识。"
+    },
+    {
+      "name": "displayName",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "消费处理器显示名称"
+    },
+    {
+      "name": "offset",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "偏移值，默认为0。"
+    },
+    {
+      "name": "size",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "数据条数，默认为200。"
+    }
+  ]
+}

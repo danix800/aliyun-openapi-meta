@@ -1,0 +1,43 @@
+{
+  "name": "ListStoreViews",
+  "protocol": "HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "日志项目名称。"
+    },
+    {
+      "name": "size",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "期望返回的数据集个数， 默认值为 100。"
+    },
+    {
+      "name": "offset",
+      "position": "Query",
+      "type": "Integer",
+      "required": false,
+      "description": "返回结果在全部数据集中的偏移位置， 默认为 0 。"
+    },
+    {
+      "name": "name",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "用于模糊搜索的数据集名称。"
+    },
+    {
+      "name": "storeType",
+      "position": "Query",
+      "type": "String",
+      "required": false,
+      "description": "数据集类型，默认不根据类型过滤。"
+    }
+  ]
+}

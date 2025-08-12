@@ -1,0 +1,32 @@
+{
+  "name": "GetCursorTime",
+  "protocol": "HTTP|HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "logstore",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "shardId",
+      "position": "Path",
+      "type": "Integer",
+      "required": true
+    },
+    {
+      "name": "cursor",
+      "position": "Query",
+      "type": "String",
+      "required": true
+    }
+  ]
+}

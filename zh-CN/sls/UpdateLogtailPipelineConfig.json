@@ -1,0 +1,29 @@
+{
+  "name": "UpdateLogtailPipelineConfig",
+  "protocol": "HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "configName",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "Logtail流水线配置名称。"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": false,
+      "description": "Logtail流水线配置内容。"
+    }
+  ]
+}

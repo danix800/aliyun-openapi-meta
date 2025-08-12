@@ -1,0 +1,29 @@
+{
+  "name": "PutConsumeProcessor",
+  "protocol": "HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "processorName",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "消费处理器标识。"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": false,
+      "description": "请求Body"
+    }
+  ]
+}

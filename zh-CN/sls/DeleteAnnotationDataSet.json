@@ -1,0 +1,15 @@
+{
+  "name": "DeleteAnnotationDataSet",
+  "protocol": "HTTPS",
+  "method": "DELETE",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "datasetId",
+      "position": "Path",
+      "type": "String",
+      "required": false,
+      "description": "数据集唯一标识"
+    }
+  ]
+}

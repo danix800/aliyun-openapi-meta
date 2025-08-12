@@ -1,0 +1,14 @@
+{
+  "name": "GetAnnotationLabel",
+  "protocol": "HTTPS",
+  "method": "GET",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "labelId",
+      "position": "Path",
+      "type": "String",
+      "required": false
+    }
+  ]
+}

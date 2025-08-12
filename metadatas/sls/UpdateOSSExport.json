@@ -1,0 +1,26 @@
+{
+  "name": "UpdateOSSExport",
+  "protocol": "HTTP|HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "ossExportName",
+      "position": "Path",
+      "type": "String",
+      "required": true
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "Object",
+      "required": false
+    }
+  ]
+}

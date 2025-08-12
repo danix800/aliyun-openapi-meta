@@ -1,0 +1,22 @@
+{
+  "name": "StartOSSIngestion",
+  "protocol": "HTTP|HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称"
+    },
+    {
+      "name": "ossIngestionName",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "OSS导入任务名称"
+    }
+  ]
+}

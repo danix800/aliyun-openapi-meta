@@ -1,0 +1,29 @@
+{
+  "name": "UpdateConfig",
+  "protocol": "HTTP|HTTPS",
+  "method": "PUT",
+  "pathPattern": "",
+  "parameters": [
+    {
+      "name": "project",
+      "position": "Host",
+      "type": "String",
+      "required": true,
+      "description": "Project名称。"
+    },
+    {
+      "name": "configName",
+      "position": "Path",
+      "type": "String",
+      "required": true,
+      "description": "Logtail配置的名称。"
+    },
+    {
+      "name": "body",
+      "position": "Body",
+      "type": "String",
+      "required": false,
+      "description": "请求消息体。"
+    }
+  ]
+}
